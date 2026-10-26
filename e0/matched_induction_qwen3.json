@@ -1,0 +1,383 @@
+{
+ "task": "induction",
+ "model": "Qwen/Qwen3-8B",
+ "dtype": "torch.float32",
+ "n_kept": 11,
+ "n_screened_out": 1,
+ "rows": [
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 0,
+   "std_Yjm": 0.3210649463769583,
+   "file": "induction_matched_qwen3_5_10_0.npz",
+   "box_S_over_Jm": [
+    1.3813004940219515,
+    1.2253201911703147
+   ],
+   "box_S_over_J": [
+    2.071950717213168,
+    1.8379802871456847
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 2.0307018853874632e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.752555280383941e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.827048042454588e-05
+   },
+   "prompt": "projects-success.groupBoxcing.beginwork demutilato {},(it lensprojects-success.groupBoxcing.beginwork demutilato {},(it",
+   "clean": 13.792612075805664
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 2,
+   "std_Yjm": 0.30503395284598633,
+   "file": "induction_matched_qwen3_5_10_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.040764340931562
+   ],
+   "box_S_over_J": [
+    1.9898521856173488,
+    2.3971063097230783
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.5141583442953897e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.8138076983154393e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.0001542092104038101
+   },
+   "prompt": "(nextbon meanQUEST radgal\u00f4 dievc.plot_cbegas(nextbon meanQUEST radgal\u00f4 dievc.plot_cb",
+   "clean": 14.429462432861328
+  },
+  {
+   "pair": [
+    10,
+    15
+   ],
+   "seed": 0,
+   "std_Yjm": 0.3608243817881757,
+   "file": "induction_matched_qwen3_10_15_0.npz",
+   "box_S_over_Jm": [
+    1.2253201911703147,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.8379802871456847,
+    1.5000000511886662
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.804477262603414e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.3787385999583023e-05
+   },
+   "res_J": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 6.621363148693417e-05
+   },
+   "prompt": "projects-success.groupBoxcing.beginwork demutilato {},(it lensprojects-success.groupBoxcing.beginwork demutilato {},(it",
+   "clean": 13.792612075805664
+  },
+  {
+   "pair": [
+    10,
+    15
+   ],
+   "seed": 1,
+   "std_Yjm": 0.18080657154158675,
+   "file": "induction_matched_qwen3_10_15_1.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.3637476406648052
+   ],
+   "box_S_over_J": [
+    1.5000000250677579,
+    2.0456214061479954
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.432410471800521e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.274555610866712e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.0401296499339836e-05
+   },
+   "prompt": " seniorVideo)==_FA\t\t\t\t\t\t damStats franchiseABILITYppednetwork Two seniorVideo)==_FA\t\t\t\t\t\t damStats franchiseABILITYppednetwork",
+   "clean": 13.167426109313965
+  },
+  {
+   "pair": [
+    10,
+    15
+   ],
+   "seed": 2,
+   "std_Yjm": 1.6056605055749231,
+   "file": "induction_matched_qwen3_10_15_2.npz",
+   "box_S_over_Jm": [
+    1.040764340931562,
+    0.9999999999999998
+   ],
+   "box_S_over_J": [
+    2.3971063097230783,
+    1.7538328149278368
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 4.373658233055926e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.969725895029028e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.1983269873989137e-05
+   },
+   "prompt": "(nextbon meanQUEST radgal\u00f4 dievc.plot_cbegas(nextbon meanQUEST radgal\u00f4 dievc.plot_cb",
+   "clean": 14.429462432861328
+  },
+  {
+   "pair": [
+    15,
+    20
+   ],
+   "seed": 0,
+   "std_Yjm": 1.365391228571053,
+   "file": "induction_matched_qwen3_15_20_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.3174642212647931
+   ],
+   "box_S_over_J": [
+    1.5000000511886669,
+    1.9761963691297029
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.0347960516212648e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00010267396009159543
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.426795007674011e-05
+   },
+   "prompt": "projects-success.groupBoxcing.beginwork demutilato {},(it lensprojects-success.groupBoxcing.beginwork demutilato {},(it",
+   "clean": 13.792612075805664
+  },
+  {
+   "pair": [
+    15,
+    20
+   ],
+   "seed": 1,
+   "std_Yjm": 0.948887368631333,
+   "file": "induction_matched_qwen3_15_20_1.npz",
+   "box_S_over_Jm": [
+    1.3637476406648052,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.0456214061479954,
+    1.4999999795397745
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 1.3729785764996133e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.2211881634420437e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00020241961048903328
+   },
+   "prompt": " seniorVideo)==_FA\t\t\t\t\t\t damStats franchiseABILITYppednetwork Two seniorVideo)==_FA\t\t\t\t\t\t damStats franchiseABILITYppednetwork",
+   "clean": 13.167426109313965
+  },
+  {
+   "pair": [
+    15,
+    20
+   ],
+   "seed": 2,
+   "std_Yjm": 1.8624021891941709,
+   "file": "induction_matched_qwen3_15_20_2.npz",
+   "box_S_over_Jm": [
+    0.9999999999999998,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.7538328149278368,
+    1.5000000192311536
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 2.8055891283599172e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.0241335861174953e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.398223754225892e-05
+   },
+   "prompt": "(nextbon meanQUEST radgal\u00f4 dievc.plot_cbegas(nextbon meanQUEST radgal\u00f4 dievc.plot_cb",
+   "clean": 14.429462432861328
+  },
+  {
+   "pair": [
+    20,
+    25
+   ],
+   "seed": 0,
+   "std_Yjm": 1.3871082371093693,
+   "file": "induction_matched_qwen3_20_25_0.npz",
+   "box_S_over_Jm": [
+    1.3174642212647942,
+    1.0262538709592748
+   ],
+   "box_S_over_J": [
+    1.9761963691297029,
+    2.3251510096324726
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 9.271933918889124e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.675183362097776e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.447879500326007e-05
+   },
+   "prompt": "projects-success.groupBoxcing.beginwork demutilato {},(it lensprojects-success.groupBoxcing.beginwork demutilato {},(it",
+   "clean": 13.792612075805664
+  },
+  {
+   "pair": [
+    20,
+    25
+   ],
+   "seed": 1,
+   "std_Yjm": 1.0468307246817492,
+   "file": "induction_matched_qwen3_20_25_1.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.404364776520292
+   ],
+   "box_S_over_J": [
+    1.4999999795397745,
+    2.286635771737832
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 3.975485853854897e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.735145143408298e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.550381032828744e-06
+   },
+   "prompt": " seniorVideo)==_FA\t\t\t\t\t\t damStats franchiseABILITYppednetwork Two seniorVideo)==_FA\t\t\t\t\t\t damStats franchiseABILITYppednetwork",
+   "clean": 13.167426109313965
+  },
+  {
+   "pair": [
+    20,
+    25
+   ],
+   "seed": 2,
+   "std_Yjm": 1.1073540919360247,
+   "file": "induction_matched_qwen3_20_25_2.npz",
+   "box_S_over_Jm": [
+    0.9999999999999998,
+    0.9999999999999996
+   ],
+   "box_S_over_J": [
+    1.5000000192311536,
+    1.7653443855941655
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.1978083227045457e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.081191741441586e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.106127069465171e-05
+   },
+   "prompt": "(nextbon meanQUEST radgal\u00f4 dievc.plot_cbegas(nextbon meanQUEST radgal\u00f4 dievc.plot_cb",
+   "clean": 14.429462432861328
+  }
+ ]
+}

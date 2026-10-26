@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-26",
+  "scope": "Offline verification of the released Paper A package in an isolated temporary copy.",
+  "results": {
+    "original_manifest_files": 515,
+    "replication_capture_hashes": 576,
+    "ledger_entries": 1190,
+    "regression_tests_passed": 10,
+    "replication_analysis": "byte-identical to archived analysis.json",
+    "manuscript_rebuild": "35 pages; extracted text identical to released PDF",
+    "content_pages": 10
+  },
+  "commands": [
+    "python verify_release.py --full"
+  ],
+  "inputs": {
+    "MANIFEST.sha256": "a44863b42411e8b4555c9f92827f0382773435c76b0db36821c4ec4e3cb252c7",
+    "replication/analysis/analysis.json": "a9c6966754886819c7adc53be890766b903c4ba8fc0c57fdc115e02a42d715b7",
+    "paper/main.pdf": "542c6e1ede8dc57c61ad04f1457a136032fc91a0936d18abd5d694cb933e02a5"
+  },
+  "environment": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "sympy": "1.14.0",
+    "pytest": "9.0.2",
+    "torch": "2.11.0",
+    "transformers": "5.8.0.dev0",
+    "matplotlib": "3.10.6"
+  },
+  "limits": [
+    "No fresh model responses collected.",
+    "No new scientific independence or validity claim follows from the reproducibility check.",
+    "A clean dependency installation on every platform has not been tested."
+  ]
+}

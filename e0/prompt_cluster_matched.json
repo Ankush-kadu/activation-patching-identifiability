@@ -1,0 +1,208 @@
+{
+ "frozen": {
+  "below": {
+   "prompts": 38,
+   "captures": 185,
+   "capture_escapes": 179,
+   "prompts_all_escape": 32,
+   "prompts_majority_escape": 38,
+   "prompts_any_escape": 38,
+   "p_prompt_all": 1.291670667568342e-45,
+   "expected_prompts_any_under_independence": 4.3571069494004036,
+   "boot_frac_lo": 0.946236559139785,
+   "boot_frac_hi": 0.9890710382513661,
+   "prompts_per_cell": {
+    "GPT-2 agreement": 5,
+    "GPT-2 capital": 2,
+    "GPT-2 greater": 5,
+    "GPT-2 induction": 5,
+    "GPT-2 ioi": 5,
+    "Qwen3-8B induction": 3,
+    "Qwen3-8B ioi": 3,
+    "Qwen3.5 capital": 2,
+    "Qwen3.5 induction": 4,
+    "Qwen3.5 ioi": 4
+   }
+  },
+  "above": {
+   "prompts": 38,
+   "captures": 185,
+   "capture_escapes": 105,
+   "prompts_all_escape": 12,
+   "prompts_majority_escape": 18,
+   "prompts_any_escape": 29,
+   "p_prompt_all": 8.804282945504941e-11,
+   "expected_prompts_any_under_independence": 4.3571069494004036,
+   "boot_frac_lo": 0.5111111111111111,
+   "boot_frac_hi": 0.6223533434650457,
+   "prompts_per_cell": {
+    "GPT-2 agreement": 5,
+    "GPT-2 capital": 2,
+    "GPT-2 greater": 5,
+    "GPT-2 induction": 5,
+    "GPT-2 ioi": 5,
+    "Qwen3-8B induction": 3,
+    "Qwen3-8B ioi": 3,
+    "Qwen3.5 capital": 2,
+    "Qwen3.5 induction": 4,
+    "Qwen3.5 ioi": 4
+   }
+  }
+ },
+ "interior": {
+  "below": {
+   "prompts": 38,
+   "captures": 185,
+   "capture_escapes": 183,
+   "prompts_all_escape": 36,
+   "prompts_majority_escape": 38,
+   "prompts_any_escape": 38,
+   "p_prompt_all": 1.4171205314699292e-55,
+   "expected_prompts_any_under_independence": 4.3571069494004036,
+   "boot_frac_lo": 0.9775280898876404,
+   "boot_frac_hi": 1.0,
+   "prompts_per_cell": {
+    "GPT-2 agreement": 5,
+    "GPT-2 capital": 2,
+    "GPT-2 greater": 5,
+    "GPT-2 induction": 5,
+    "GPT-2 ioi": 5,
+    "Qwen3-8B induction": 3,
+    "Qwen3-8B ioi": 3,
+    "Qwen3.5 capital": 2,
+    "Qwen3.5 induction": 4,
+    "Qwen3.5 ioi": 4
+   }
+  },
+  "above": {
+   "prompts": 38,
+   "captures": 185,
+   "capture_escapes": 44,
+   "prompts_all_escape": 3,
+   "prompts_majority_escape": 5,
+   "prompts_any_escape": 13,
+   "p_prompt_all": 0.06899589159214467,
+   "expected_prompts_any_under_independence": 4.3571069494004036,
+   "boot_frac_lo": 0.21275768933965386,
+   "boot_frac_hi": 0.2640449438202247,
+   "prompts_per_cell": {
+    "GPT-2 agreement": 5,
+    "GPT-2 capital": 2,
+    "GPT-2 greater": 5,
+    "GPT-2 induction": 5,
+    "GPT-2 ioi": 5,
+    "Qwen3-8B induction": 3,
+    "Qwen3-8B ioi": 3,
+    "Qwen3.5 capital": 2,
+    "Qwen3.5 induction": 4,
+    "Qwen3.5 ioi": 4
+   }
+  }
+ },
+ "symmetric": {
+  "below": {
+   "prompts": 38,
+   "captures": 185,
+   "capture_escapes": 162,
+   "prompts_all_escape": 24,
+   "prompts_majority_escape": 35,
+   "prompts_any_escape": 38,
+   "p_prompt_all": 2.4451340227569575e-29,
+   "expected_prompts_any_under_independence": 4.3571069494004036,
+   "boot_frac_lo": 0.8333333333333334,
+   "boot_frac_hi": 0.9144385026737968,
+   "prompts_per_cell": {
+    "GPT-2 agreement": 5,
+    "GPT-2 capital": 2,
+    "GPT-2 greater": 5,
+    "GPT-2 induction": 5,
+    "GPT-2 ioi": 5,
+    "Qwen3-8B induction": 3,
+    "Qwen3-8B ioi": 3,
+    "Qwen3.5 capital": 2,
+    "Qwen3.5 induction": 4,
+    "Qwen3.5 ioi": 4
+   }
+  },
+  "above": {
+   "prompts": 38,
+   "captures": 185,
+   "capture_escapes": 22,
+   "prompts_all_escape": 1,
+   "prompts_majority_escape": 2,
+   "prompts_any_escape": 14,
+   "p_prompt_all": 0.6179014439049251,
+   "expected_prompts_any_under_independence": 4.3571069494004036,
+   "boot_frac_lo": 0.07446808510638298,
+   "boot_frac_hi": 0.17222222222222222,
+   "prompts_per_cell": {
+    "GPT-2 agreement": 5,
+    "GPT-2 capital": 2,
+    "GPT-2 greater": 5,
+    "GPT-2 induction": 5,
+    "GPT-2 ioi": 5,
+    "Qwen3-8B induction": 3,
+    "Qwen3-8B ioi": 3,
+    "Qwen3.5 capital": 2,
+    "Qwen3.5 induction": 4,
+    "Qwen3.5 ioi": 4
+   }
+  }
+ },
+ "matched": {
+  "below": {
+   "prompts": 38,
+   "captures": 185,
+   "capture_escapes": 176,
+   "prompts_all_escape": 30,
+   "prompts_majority_escape": 38,
+   "prompts_any_escape": 38,
+   "p_prompt_all": 3.4870439565716435e-41,
+   "expected_prompts_any_under_independence": 4.3571069494004036,
+   "boot_frac_lo": 0.9247210113339145,
+   "boot_frac_hi": 0.9774043039421063,
+   "prompts_per_cell": {
+    "GPT-2 agreement": 5,
+    "GPT-2 capital": 2,
+    "GPT-2 greater": 5,
+    "GPT-2 induction": 5,
+    "GPT-2 ioi": 5,
+    "Qwen3-8B induction": 3,
+    "Qwen3-8B ioi": 3,
+    "Qwen3.5 capital": 2,
+    "Qwen3.5 induction": 4,
+    "Qwen3.5 ioi": 4
+   }
+  },
+  "above": {
+   "prompts": 38,
+   "captures": 185,
+   "capture_escapes": 9,
+   "prompts_all_escape": 1,
+   "prompts_majority_escape": 1,
+   "prompts_any_escape": 9,
+   "p_prompt_all": 0.6179014439049251,
+   "expected_prompts_any_under_independence": 4.3571069494004036,
+   "boot_frac_lo": 0.026881720430107527,
+   "boot_frac_hi": 0.07103825136612021,
+   "prompts_per_cell": {
+    "GPT-2 agreement": 5,
+    "GPT-2 capital": 2,
+    "GPT-2 greater": 5,
+    "GPT-2 induction": 5,
+    "GPT-2 ioi": 5,
+    "Qwen3-8B induction": 3,
+    "Qwen3-8B ioi": 3,
+    "Qwen3.5 capital": 2,
+    "Qwen3.5 induction": 4,
+    "Qwen3.5 ioi": 4
+   }
+  }
+ },
+ "estimands": {
+  "unit": "prompt within a model x task cell; captures on the same prompt are grouped",
+  "nominal": 0.025,
+  "boot": "4000 replicates, prompts resampled with replacement within each cell",
+  "p_prompt_all": "one-sided binomial: prompts on which every capture escapes, against the 2.5% per-end rate"
+ }
+}

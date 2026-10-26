@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite the paper and record the repository revision used."
+title: "What Can Activation Patching Actually Establish? Reachable-State Geometry and the Limits of Mechanistic Evidence"
+type: software
+version: "1.0.0"
+authors:
+  - family-names: Kadu
+    given-names: Ankush
+    affiliation: "QpiAI, India"
+  - family-names: Kalyanasundaram
+    given-names: Ananth
+    affiliation: "QpiAI, India"
+  - family-names: Krishnan
+    given-names: Aswanth
+    affiliation: "QpiAI, India"
+repository-code: "https://github.com/Ankush-kadu/activation-patching-identifiability"
+url: "https://openreview.net/forum?id=Gfh4EJoWTV"
+preferred-citation:
+  type: conference-paper
+  title: "What Can Activation Patching Actually Establish? Reachable-State Geometry and the Limits of Mechanistic Evidence"
+  authors:
+    - family-names: Kadu
+      given-names: Ankush
+    - family-names: Kalyanasundaram
+      given-names: Ananth
+    - family-names: Krishnan
+      given-names: Aswanth
+  collection-title: "NeurIPS 2026 Workshop TAE (Trust-AI-Eval): Can We Trust AI Evaluation?"
+  year: 2026
+  url: "https://openreview.net/forum?id=Gfh4EJoWTV"
+  notes: "Accepted poster; non-archival workshop."

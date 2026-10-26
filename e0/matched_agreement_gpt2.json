@@ -1,0 +1,315 @@
+{
+ "task": "agreement",
+ "model": "gpt2",
+ "dtype": "torch.float32",
+ "n_kept": 9,
+ "n_screened_out": 11,
+ "rows": [
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 1,
+   "std_Yjm": 0.20415772656280745,
+   "file": "agreement_matched_gpt2_5_7_1.npz",
+   "box_S_over_Jm": [
+    1.0327422107040576,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.5491133128672228,
+    2.943967829497621
+   ],
+   "res_S": {
+    "n_distinct": 326,
+    "n": 448,
+    "step_over_sd": 4.0716173935292236e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00022422059629184437
+   },
+   "res_J": {
+    "n_distinct": 225,
+    "n": 256,
+    "step_over_sd": 0.000151855732652903
+   },
+   "prompt": "The books to the office",
+   "clean": 3.3956527709960938
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 3,
+   "std_Yjm": 0.1606775883171793,
+   "file": "agreement_matched_gpt2_5_7_3.npz",
+   "box_S_over_Jm": [
+    1.752680643798906,
+    1.1368396299623134
+   ],
+   "box_S_over_J": [
+    3.351816358805264,
+    1.7052594722194374
+   ],
+   "res_S": {
+    "n_distinct": 265,
+    "n": 448,
+    "step_over_sd": 7.262450115371198e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.748263034785843e-05
+   },
+   "res_J": {
+    "n_distinct": 144,
+    "n": 256,
+    "step_over_sd": 5.470509454972862e-05
+   },
+   "prompt": "The reports to the cabinet",
+   "clean": 4.209297180175781
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 0,
+   "std_Yjm": 0.1963774269368079,
+   "file": "agreement_matched_gpt2_5_10_0.npz",
+   "box_S_over_Jm": [
+    1.0360315392515513,
+    1.0422973869652896
+   ],
+   "box_S_over_J": [
+    1.5540473081023678,
+    1.5634460947795459
+   ],
+   "res_S": {
+    "n_distinct": 326,
+    "n": 448,
+    "step_over_sd": 5.7964006212754184e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.885066960218934e-05
+   },
+   "res_J": {
+    "n_distinct": 169,
+    "n": 256,
+    "step_over_sd": 0.00039962288709718686
+   },
+   "prompt": "The lamps to the office",
+   "clean": 3.1036529541015625
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 1,
+   "std_Yjm": 0.17167722144266914,
+   "file": "agreement_matched_gpt2_5_10_1.npz",
+   "box_S_over_Jm": [
+    1.0327422107040576,
+    1.29786205191744
+   ],
+   "box_S_over_J": [
+    1.5491133128672228,
+    1.9467930880835789
+   ],
+   "res_S": {
+    "n_distinct": 324,
+    "n": 448,
+    "step_over_sd": 6.090231005641749e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.0003110823979440081
+   },
+   "res_J": {
+    "n_distinct": 225,
+    "n": 256,
+    "step_over_sd": 0.00021775421046094705
+   },
+   "prompt": "The books to the office",
+   "clean": 3.3956527709960938
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 2,
+   "std_Yjm": 0.1513406273532429,
+   "file": "agreement_matched_gpt2_5_10_2.npz",
+   "box_S_over_Jm": [
+    2.2072415445827014,
+    1.4523097423863938
+   ],
+   "box_S_over_J": [
+    3.4908047607594948,
+    2.178464582956915
+   ],
+   "res_S": {
+    "n_distinct": 282,
+    "n": 448,
+    "step_over_sd": 6.675731325185462e-05
+   },
+   "res_Jm": {
+    "n_distinct": 253,
+    "n": 256,
+    "step_over_sd": 5.04120715281713e-05
+   },
+   "res_J": {
+    "n_distinct": 121,
+    "n": 256,
+    "step_over_sd": 0.00019341022444811497
+   },
+   "prompt": "The lamps to the drawer",
+   "clean": 3.0237884521484375
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 3,
+   "std_Yjm": 0.15101924450535997,
+   "file": "agreement_matched_gpt2_5_10_3.npz",
+   "box_S_over_Jm": [
+    1.752680643798906,
+    1.0
+   ],
+   "box_S_over_J": [
+    3.351816358805264,
+    2.622654264546316
+   ],
+   "res_S": {
+    "n_distinct": 265,
+    "n": 448,
+    "step_over_sd": 7.450068215060051e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.0519353054896376e-05
+   },
+   "res_J": {
+    "n_distinct": 144,
+    "n": 256,
+    "step_over_sd": 0.00023852333287994332
+   },
+   "prompt": "The reports to the cabinet",
+   "clean": 4.209297180175781
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 4,
+   "std_Yjm": 0.2061033986557992,
+   "file": "agreement_matched_gpt2_5_10_4.npz",
+   "box_S_over_Jm": [
+    1.0326542057183152,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.5489813122978628,
+    2.1236341415185565
+   ],
+   "res_S": {
+    "n_distinct": 278,
+    "n": 448,
+    "step_over_sd": 5.167134649655684e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.701731548828745e-05
+   },
+   "res_J": {
+    "n_distinct": 225,
+    "n": 256,
+    "step_over_sd": 4.869766511200876e-05
+   },
+   "prompt": "The reports to the closet",
+   "clean": 3.097564697265625
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 1,
+   "std_Yjm": 0.20223234660311723,
+   "file": "agreement_matched_gpt2_7_9_1.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.943967829497621,
+    1.5000000214299896
+   ],
+   "res_S": {
+    "n_distinct": 324,
+    "n": 448,
+    "step_over_sd": 4.835582993080766e-05
+   },
+   "res_Jm": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 0.0001886294319232411
+   },
+   "res_J": {
+    "n_distinct": 223,
+    "n": 256,
+    "step_over_sd": 8.73222931022331e-05
+   },
+   "prompt": "The books to the office",
+   "clean": 3.3956527709960938
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 3,
+   "std_Yjm": 0.1561998628082552,
+   "file": "agreement_matched_gpt2_7_9_3.npz",
+   "box_S_over_Jm": [
+    1.1368396299623134,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.7052594722194374,
+    1.499999981671983
+   ],
+   "res_S": {
+    "n_distinct": 263,
+    "n": 448,
+    "step_over_sd": 7.235363609146148e-05
+   },
+   "res_Jm": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 4.8843797901509966e-05
+   },
+   "res_J": {
+    "n_distinct": 144,
+    "n": 256,
+    "step_over_sd": 6.123263108302701e-05
+   },
+   "prompt": "The reports to the cabinet",
+   "clean": 4.209297180175781
+  }
+ ]
+}

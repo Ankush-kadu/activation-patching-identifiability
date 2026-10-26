@@ -1,0 +1,213 @@
+{
+ "task": "capital",
+ "model": "Qwen/Qwen3.5-9B-Base",
+ "dtype": "torch.float32",
+ "n_kept": 6,
+ "n_screened_out": 6,
+ "rows": [
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 2,
+   "std_Yjm": 0.15073210542684964,
+   "file": "capital_matched_qwen35_5_7_2.npz",
+   "box_S_over_Jm": [
+    0.9999999999999994,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.5000000875002504,
+    1.9999978405100118
+   ],
+   "res_S": {
+    "n_distinct": 107,
+    "n": 448,
+    "step_over_sd": 1.0204252453065028e-05
+   },
+   "res_Jm": {
+    "n_distinct": 196,
+    "n": 256,
+    "step_over_sd": 3.796169291362026e-05
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.00032130238654424993
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 10.42227554321289
+  },
+  {
+   "pair": [
+    7,
+    11
+   ],
+   "seed": 2,
+   "std_Yjm": 0.19421091337101387,
+   "file": "capital_matched_qwen35_7_11_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    0.9999999999999998
+   ],
+   "box_S_over_J": [
+    1.9999978405100118,
+    1.7661562432014961
+   ],
+   "res_S": {
+    "n_distinct": 108,
+    "n": 448,
+    "step_over_sd": 8.39543664665705e-06
+   },
+   "res_Jm": {
+    "n_distinct": 196,
+    "n": 256,
+    "step_over_sd": 4.910508373874867e-05
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.0027421661799486383
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 10.42227554321289
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 0,
+   "std_Yjm": 5.315388975873813,
+   "file": "capital_matched_qwen35_19_23_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.8321031548870519,
+    2.0000002012604305
+   ],
+   "res_S": {
+    "n_distinct": 108,
+    "n": 448,
+    "step_over_sd": 2.458562898881436e-07
+   },
+   "res_Jm": {
+    "n_distinct": 224,
+    "n": 256,
+    "step_over_sd": 1.7941759685601797e-07
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.0005123506879405253
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 13.108196258544922
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 1,
+   "std_Yjm": 2.5290721918714985,
+   "file": "capital_matched_qwen35_19_23_1.npz",
+   "box_S_over_Jm": [
+    0.9999999999999989,
+    1.6926449527723293
+   ],
+   "box_S_over_J": [
+    1.4999999898722902,
+    3.3852908230049477
+   ],
+   "res_S": {
+    "n_distinct": 107,
+    "n": 448,
+    "step_over_sd": 4.001434613166452e-07
+   },
+   "res_Jm": {
+    "n_distinct": 169,
+    "n": 256,
+    "step_over_sd": 2.6395925890528876e-05
+   },
+   "res_J": {
+    "n_distinct": 49,
+    "n": 256,
+    "step_over_sd": 0.0011960151559653948
+   },
+   "prompt": "The capital of Egypt is",
+   "clean": 13.291563034057617
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 2,
+   "std_Yjm": 4.848921105975624,
+   "file": "capital_matched_qwen35_19_23_2.npz",
+   "box_S_over_Jm": [
+    1.0000000000000004,
+    0.9999999999999992
+   ],
+   "box_S_over_J": [
+    2.0000004898384933,
+    2.0000003664852906
+   ],
+   "res_S": {
+    "n_distinct": 109,
+    "n": 448,
+    "step_over_sd": 2.6852184359921253e-07
+   },
+   "res_Jm": {
+    "n_distinct": 196,
+    "n": 256,
+    "step_over_sd": 1.9667763107776254e-07
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.0003166999793996076
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 10.42227554321289
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 3,
+   "std_Yjm": 4.402353804458353,
+   "file": "capital_matched_qwen35_19_23_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.9999997514565888,
+    2.0000001810183887
+   ],
+   "res_S": {
+    "n_distinct": 110,
+    "n": 448,
+    "step_over_sd": 2.79792095852805e-07
+   },
+   "res_Jm": {
+    "n_distinct": 253,
+    "n": 256,
+    "step_over_sd": 2.1662827631901023e-07
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.00024350354156466402
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 9.203675270080566
+  }
+ ]
+}

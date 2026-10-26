@@ -1,0 +1,553 @@
+{
+ "task": "induction",
+ "model": "Qwen/Qwen3.5-9B-Base",
+ "dtype": "torch.float32",
+ "n_kept": 16,
+ "n_screened_out": 0,
+ "rows": [
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 0,
+   "std_Yjm": 0.18410796453736292,
+   "file": "induction_matched_qwen35_5_7_0.npz",
+   "box_S_over_Jm": [
+    0.9999999999999997,
+    1.2275263631619806
+   ],
+   "box_S_over_J": [
+    1.499999988567743,
+    2.4417527683540414
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 2.0233663387783045e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.1079839010855324e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.741354827440681e-05
+   },
+   "prompt": "_systemdiff.local/wulti et ['uff footEDIT householdKeyboard_systemdiff.local/wulti et ['uff footEDIT household",
+   "clean": 5.709390163421631
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 1,
+   "std_Yjm": 0.17884796557849866,
+   "file": "induction_matched_qwen35_5_7_1.npz",
+   "box_S_over_Jm": [
+    0.9999999999999994,
+    1.1339211419758823
+   ],
+   "box_S_over_J": [
+    1.5000000150618287,
+    1.7008817047745843
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.1591577624406908e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.13292740193384e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.1435298156368102e-05
+   },
+   "prompt": " tight calculate towaquepackage games Ut operators contrib London pes DO tight calculate towaquepackage games Ut operators contrib London pes",
+   "clean": 10.363761901855469
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 2,
+   "std_Yjm": 0.3955180203142095,
+   "file": "induction_matched_qwen35_5_7_2.npz",
+   "box_S_over_Jm": [
+    0.9999999999999997,
+    1.0666611560190455
+   ],
+   "box_S_over_J": [
+    1.4999999650420235,
+    1.599991755746632
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 7.96573840531618e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.666327520992023e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.12492091138637e-05
+   },
+   "prompt": "yard(structarningstants protectionahoo Location objetadata vast BibleITLEyard(structarningstants protectionahoo Location objetadata vast Bible",
+   "clean": 6.930096626281738
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 3,
+   "std_Yjm": 0.17292236559287338,
+   "file": "induction_matched_qwen35_5_7_3.npz",
+   "box_S_over_Jm": [
+    0.9999999999999992,
+    1.792148335206228
+   ],
+   "box_S_over_J": [
+    1.500000021142522,
+    2.6882225217906264
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.294523791608621e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.860530239657371e-05
+   },
+   "res_J": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 5.139973504641927e-05
+   },
+   "prompt": "(next er almostapped\u0142 electron matchedianarowsadmin PARTIC steel(next er almostapped\u0142 electron matchedianarowsadmin PARTIC",
+   "clean": 6.7730536460876465
+  },
+  {
+   "pair": [
+    7,
+    11
+   ],
+   "seed": 0,
+   "std_Yjm": 0.24982500804979205,
+   "file": "induction_matched_qwen35_7_11_0.npz",
+   "box_S_over_Jm": [
+    1.227526363161981,
+    1.063745004263201
+   ],
+   "box_S_over_J": [
+    2.4417527683540414,
+    1.5956174892242854
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 7.940196105766752e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.0001412426641451303
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.635874655656546e-05
+   },
+   "prompt": "_systemdiff.local/wulti et ['uff footEDIT householdKeyboard_systemdiff.local/wulti et ['uff footEDIT household",
+   "clean": 5.709390163421631
+  },
+  {
+   "pair": [
+    7,
+    11
+   ],
+   "seed": 1,
+   "std_Yjm": 0.19620852304932276,
+   "file": "induction_matched_qwen35_7_11_1.npz",
+   "box_S_over_Jm": [
+    1.1339211419758837,
+    1.033355973008021
+   ],
+   "box_S_over_J": [
+    1.7008817047745843,
+    1.5811314405842223
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 5.53073245861289e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.9163085321217653e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.0176427777645882e-05
+   },
+   "prompt": " tight calculate towaquepackage games Ut operators contrib London pes DO tight calculate towaquepackage games Ut operators contrib London pes",
+   "clean": 10.363761901855469
+  },
+  {
+   "pair": [
+    7,
+    11
+   ],
+   "seed": 2,
+   "std_Yjm": 0.6263863929955606,
+   "file": "induction_matched_qwen35_7_11_2.npz",
+   "box_S_over_Jm": [
+    1.0666611560190455,
+    1.3011042546533034
+   ],
+   "box_S_over_J": [
+    1.599991755746632,
+    2.280666857341625
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.4140478555863064e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.6643778861951837e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 8.512367576716101e-05
+   },
+   "prompt": "yard(structarningstants protectionahoo Location objetadata vast BibleITLEyard(structarningstants protectionahoo Location objetadata vast Bible",
+   "clean": 6.930096626281738
+  },
+  {
+   "pair": [
+    7,
+    11
+   ],
+   "seed": 3,
+   "std_Yjm": 0.17825905082552168,
+   "file": "induction_matched_qwen35_7_11_3.npz",
+   "box_S_over_Jm": [
+    1.792148335206228,
+    1.0114484463390156
+   ],
+   "box_S_over_J": [
+    2.6882225217906264,
+    1.8251481958104436
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.6618583592635113e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.6749674476268183e-05
+   },
+   "res_J": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 2.404800441431095e-05
+   },
+   "prompt": "(next er almostapped\u0142 electron matchedianarowsadmin PARTIC steel(next er almostapped\u0142 electron matchedianarowsadmin PARTIC",
+   "clean": 6.7730536460876465
+  },
+  {
+   "pair": [
+    15,
+    19
+   ],
+   "seed": 0,
+   "std_Yjm": 2.8656412313879494,
+   "file": "induction_matched_qwen35_15_19_0.npz",
+   "box_S_over_Jm": [
+    0.9999999999999997,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.7980515610119039,
+    2.6515325542439943
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.382280998514213e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.159951645204491e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.378328875360899e-05
+   },
+   "prompt": "_systemdiff.local/wulti et ['uff footEDIT householdKeyboard_systemdiff.local/wulti et ['uff footEDIT household",
+   "clean": 5.709390163421631
+  },
+  {
+   "pair": [
+    15,
+    19
+   ],
+   "seed": 1,
+   "std_Yjm": 4.051538978997472,
+   "file": "induction_matched_qwen35_15_19_1.npz",
+   "box_S_over_Jm": [
+    0.9999999999999987,
+    1.0000000000000004
+   ],
+   "box_S_over_J": [
+    1.5000000135335847,
+    2.4916889578239467
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 9.326353513300684e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 9.415427780405861e-07
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.873810041123933e-05
+   },
+   "prompt": " tight calculate towaquepackage games Ut operators contrib London pes DO tight calculate towaquepackage games Ut operators contrib London pes",
+   "clean": 10.363761901855469
+  },
+  {
+   "pair": [
+    15,
+    19
+   ],
+   "seed": 2,
+   "std_Yjm": 4.8169030804744395,
+   "file": "induction_matched_qwen35_15_19_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.3333468183594999
+   ],
+   "box_S_over_J": [
+    1.500000019373633,
+    3.2824914090374113
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 4.237897859736546e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.088741224391618e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00016606368469905934
+   },
+   "prompt": "yard(structarningstants protectionahoo Location objetadata vast BibleITLEyard(structarningstants protectionahoo Location objetadata vast Bible",
+   "clean": 6.930096626281738
+  },
+  {
+   "pair": [
+    15,
+    19
+   ],
+   "seed": 3,
+   "std_Yjm": 2.8674410690320795,
+   "file": "induction_matched_qwen35_15_19_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0000000000000002
+   ],
+   "box_S_over_J": [
+    1.732077645534053,
+    2.4709160225545603
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.414957852426235e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.885194323319383e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.6741551696368296e-05
+   },
+   "prompt": "(next er almostapped\u0142 electron matchedianarowsadmin PARTIC steel(next er almostapped\u0142 electron matchedianarowsadmin PARTIC",
+   "clean": 6.7730536460876465
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 0,
+   "std_Yjm": 3.084280680091845,
+   "file": "induction_matched_qwen35_19_23_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.6953601114758379
+   ],
+   "box_S_over_J": [
+    2.6515325542439943,
+    2.543040220597589
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 8.933489491152239e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.0203757603691596e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 9.18432130922241e-06
+   },
+   "prompt": "_systemdiff.local/wulti et ['uff footEDIT householdKeyboard_systemdiff.local/wulti et ['uff footEDIT household",
+   "clean": 5.709390163421631
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 1,
+   "std_Yjm": 4.767718042269468,
+   "file": "induction_matched_qwen35_19_23_1.npz",
+   "box_S_over_Jm": [
+    1.0000000000000004,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.4916889578239467,
+    2.875713466519399
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.4326058339057117e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 9.001233684081963e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.0415402541933173e-05
+   },
+   "prompt": " tight calculate towaquepackage games Ut operators contrib London pes DO tight calculate towaquepackage games Ut operators contrib London pes",
+   "clean": 10.363761901855469
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 2,
+   "std_Yjm": 4.981666766315672,
+   "file": "induction_matched_qwen35_19_23_2.npz",
+   "box_S_over_Jm": [
+    1.3333468183594992,
+    1.1232232043901307
+   ],
+   "box_S_over_J": [
+    3.2824914090374113,
+    2.867580617903804
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 3.993673768263942e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.815149879880814e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.286249828892204e-05
+   },
+   "prompt": "yard(structarningstants protectionahoo Location objetadata vast BibleITLEyard(structarningstants protectionahoo Location objetadata vast Bible",
+   "clean": 6.930096626281738
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 3,
+   "std_Yjm": 3.249726433378942,
+   "file": "induction_matched_qwen35_19_23_3.npz",
+   "box_S_over_Jm": [
+    1.0000000000000002,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.4709160225545603,
+    2.3760740241740828
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 3.7461444257865075e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.4188434054065096e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00014309937027220715
+   },
+   "prompt": "(next er almostapped\u0142 electron matchedianarowsadmin PARTIC steel(next er almostapped\u0142 electron matchedianarowsadmin PARTIC",
+   "clean": 6.7730536460876465
+  }
+ ]
+}

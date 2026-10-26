@@ -1,0 +1,377 @@
+[
+ {
+  "pair": [
+   "S-Inhib",
+   "NameMover"
+  ],
+  "hA": [
+   8,
+   6
+  ],
+  "hB": [
+   9,
+   9
+  ],
+  "seed": 0,
+  "std_Yj": 0.29411171703587674,
+  "cross_single": 3.0100122357266907,
+  "cross_joint": 0.002161747406535249,
+  "cross_ridge": 0.8947893874122309,
+  "ratio": 1392.3977549953454,
+  "ridge_ratio": 413.91949156833215,
+  "rmse_add": 0.07953134753140495,
+  "rmse_full": 0.07525913257734154,
+  "prompt": "After Emma and David finished work, David gave the keys to",
+  "clean": 3.2227401733398438
+ },
+ {
+  "pair": [
+   "S-Inhib",
+   "NameMover"
+  ],
+  "hA": [
+   8,
+   6
+  ],
+  "hB": [
+   9,
+   9
+  ],
+  "seed": 1,
+  "std_Yj": 0.5482723848791513,
+  "cross_single": 1.6057099526984924,
+  "cross_joint": 0.0020233373062713794,
+  "cross_ridge": 0.6576056552656182,
+  "ratio": 793.5947939681428,
+  "ridge_ratio": 325.01039407880967,
+  "rmse_add": 0.24847386490985848,
+  "rmse_full": 0.2475703137227291,
+  "prompt": "When Bob and Peter went to the park, Peter handed a ball to",
+  "clean": 1.99932861328125
+ },
+ {
+  "pair": [
+   "S-Inhib",
+   "NameMover"
+  ],
+  "hA": [
+   8,
+   6
+  ],
+  "hB": [
+   9,
+   9
+  ],
+  "seed": 2,
+  "std_Yj": 0.17701273863288686,
+  "cross_single": 0.9230951204566115,
+  "cross_joint": 0.0012241003475101475,
+  "cross_ridge": 0.5266136112797458,
+  "ratio": 754.1008564650858,
+  "ridge_ratio": 430.20460892025056,
+  "rmse_add": 0.09644528308702695,
+  "rmse_full": 0.09593322573301179,
+  "prompt": "After John and Tom finished work, Tom gave the keys to",
+  "clean": 1.9186782836914062
+ },
+ {
+  "pair": [
+   "S-Inhib",
+   "NameMover"
+  ],
+  "hA": [
+   7,
+   9
+  ],
+  "hB": [
+   9,
+   6
+  ],
+  "seed": 0,
+  "std_Yj": 0.16618479230890962,
+  "cross_single": 1.8775249169388486,
+  "cross_joint": 0.005122059134658722,
+  "cross_ridge": 0.27450149495501397,
+  "ratio": 366.55666550869415,
+  "ridge_ratio": 53.592019876846614,
+  "rmse_add": 0.0917004475955445,
+  "rmse_full": 0.09118754417635865,
+  "prompt": "After Emma and David finished work, David gave the keys to",
+  "clean": 3.2227401733398438
+ },
+ {
+  "pair": [
+   "S-Inhib",
+   "NameMover"
+  ],
+  "hA": [
+   7,
+   9
+  ],
+  "hB": [
+   9,
+   6
+  ],
+  "seed": 1,
+  "std_Yj": 0.18340702254623398,
+  "cross_single": 2.042295016456025,
+  "cross_joint": 0.013127174820169313,
+  "cross_ridge": 0.5437587990122275,
+  "ratio": 155.57765051762172,
+  "ridge_ratio": 41.42237811724474,
+  "rmse_add": 0.07225136404299197,
+  "rmse_full": 0.07213946572114123,
+  "prompt": "When Bob and Peter went to the park, Peter handed a ball to",
+  "clean": 1.99932861328125
+ },
+ {
+  "pair": [
+   "S-Inhib",
+   "NameMover"
+  ],
+  "hA": [
+   7,
+   9
+  ],
+  "hB": [
+   9,
+   6
+  ],
+  "seed": 2,
+  "std_Yj": 0.1448084243339161,
+  "cross_single": 1.7551384683739386,
+  "cross_joint": 0.003033962023698428,
+  "cross_ridge": 0.3059034409758773,
+  "ratio": 578.4971778369224,
+  "ridge_ratio": 100.82639089957301,
+  "rmse_add": 0.07864574678934873,
+  "rmse_full": 0.07806973038216147,
+  "prompt": "After John and Tom finished work, Tom gave the keys to",
+  "clean": 1.9186782836914062
+ },
+ {
+  "pair": [
+   "S-Inhib",
+   "NameMover"
+  ],
+  "hA": [
+   8,
+   10
+  ],
+  "hB": [
+   10,
+   0
+  ],
+  "seed": 0,
+  "std_Yj": 0.36932971128612435,
+  "cross_single": 1.483659090111525,
+  "cross_joint": 0.003251273971829543,
+  "cross_ridge": 0.1303269910786134,
+  "ratio": 456.3316112288891,
+  "ridge_ratio": 40.08489970633768,
+  "rmse_add": 0.06364469412606953,
+  "rmse_full": 0.06452150292885099,
+  "prompt": "After Emma and David finished work, David gave the keys to",
+  "clean": 3.2227401733398438
+ },
+ {
+  "pair": [
+   "S-Inhib",
+   "NameMover"
+  ],
+  "hA": [
+   8,
+   10
+  ],
+  "hB": [
+   10,
+   0
+  ],
+  "seed": 1,
+  "std_Yj": 0.45171855512012826,
+  "cross_single": 1.5382379718217014,
+  "cross_joint": 0.0022700456831873557,
+  "cross_ridge": 1.268553361647843,
+  "ratio": 677.6242360294142,
+  "ridge_ratio": 558.8228338500553,
+  "rmse_add": 0.08472630580058105,
+  "rmse_full": 0.09326617042153432,
+  "prompt": "When Bob and Peter went to the park, Peter handed a ball to",
+  "clean": 1.99932861328125
+ },
+ {
+  "pair": [
+   "S-Inhib",
+   "NameMover"
+  ],
+  "hA": [
+   8,
+   10
+  ],
+  "hB": [
+   10,
+   0
+  ],
+  "seed": 2,
+  "std_Yj": 0.20253758123918056,
+  "cross_single": 2.384077331335126,
+  "cross_joint": 0.0011307104122139677,
+  "cross_ridge": 0.6953342736454616,
+  "ratio": 2108.4773834062653,
+  "ridge_ratio": 614.9534541598273,
+  "rmse_add": 0.09757535059153091,
+  "rmse_full": 0.07164308284528903,
+  "prompt": "After John and Tom finished work, Tom gave the keys to",
+  "clean": 1.9186782836914062
+ },
+ {
+  "pair": [
+   "Induction",
+   "NameMover"
+  ],
+  "hA": [
+   5,
+   5
+  ],
+  "hB": [
+   9,
+   9
+  ],
+  "seed": 0,
+  "std_Yj": 0.2782229855588387,
+  "cross_single": 221.10400420612143,
+  "cross_joint": 4.316630310189582e-05,
+  "cross_ridge": 0.030225746074627892,
+  "ratio": 5122143.624025351,
+  "ridge_ratio": 700.2162312412713,
+  "rmse_add": 0.04860092247037363,
+  "rmse_full": 0.048614149858607236,
+  "prompt": "After Emma and David finished work, David gave the keys to",
+  "clean": 3.2227401733398438
+ },
+ {
+  "pair": [
+   "Induction",
+   "NameMover"
+  ],
+  "hA": [
+   5,
+   5
+  ],
+  "hB": [
+   9,
+   9
+  ],
+  "seed": 1,
+  "std_Yj": 0.5495395975435895,
+  "cross_single": 594.3666783793656,
+  "cross_joint": 0.00017569448612260382,
+  "cross_ridge": 0.3649321074424624,
+  "ratio": 3382955.7859010003,
+  "ridge_ratio": 2077.0834389634974,
+  "rmse_add": 0.24835673132158237,
+  "rmse_full": 0.24844086314555158,
+  "prompt": "When Bob and Peter went to the park, Peter handed a ball to",
+  "clean": 1.99932861328125
+ },
+ {
+  "pair": [
+   "Induction",
+   "NameMover"
+  ],
+  "hA": [
+   5,
+   5
+  ],
+  "hB": [
+   9,
+   9
+  ],
+  "seed": 2,
+  "std_Yj": 0.16397400100023124,
+  "cross_single": 351.2513530064492,
+  "cross_joint": 6.364913269276052e-05,
+  "cross_ridge": 0.14047571355147026,
+  "ratio": 5518556.78382874,
+  "ridge_ratio": 2207.032642998575,
+  "rmse_add": 0.09234868116579081,
+  "rmse_full": 0.09293792597162476,
+  "prompt": "After John and Tom finished work, Tom gave the keys to",
+  "clean": 1.9186782836914062
+ },
+ {
+  "pair": [
+   "NameMover",
+   "NegNameMover"
+  ],
+  "hA": [
+   9,
+   9
+  ],
+  "hB": [
+   10,
+   7
+  ],
+  "seed": 0,
+  "std_Yj": 0.5743170551171451,
+  "cross_single": 0.1788800454996612,
+  "cross_joint": 0.005776622256797201,
+  "cross_ridge": 0.17852872446842258,
+  "ratio": 30.96620092982152,
+  "ridge_ratio": 30.905383203541216,
+  "rmse_add": 0.15646098188594168,
+  "rmse_full": 0.15216176581506682,
+  "prompt": "After Emma and David finished work, David gave the keys to",
+  "clean": 3.2227401733398438
+ },
+ {
+  "pair": [
+   "NameMover",
+   "NegNameMover"
+  ],
+  "hA": [
+   9,
+   9
+  ],
+  "hB": [
+   10,
+   7
+  ],
+  "seed": 1,
+  "std_Yj": 1.0986953499163261,
+  "cross_single": 1.7393879879542224,
+  "cross_joint": 0.014086989362471145,
+  "cross_ridge": 1.6530487358775534,
+  "ratio": 123.47478536386843,
+  "ridge_ratio": 117.345778671588,
+  "rmse_add": 0.2691409721672647,
+  "rmse_full": 0.26547605714337924,
+  "prompt": "When Bob and Peter went to the park, Peter handed a ball to",
+  "clean": 1.99932861328125
+ },
+ {
+  "pair": [
+   "NameMover",
+   "NegNameMover"
+  ],
+  "hA": [
+   9,
+   9
+  ],
+  "hB": [
+   10,
+   7
+  ],
+  "seed": 2,
+  "std_Yj": 0.42227377504339336,
+  "cross_single": 0.10531825780671764,
+  "cross_joint": 0.004113727677305468,
+  "cross_ridge": 0.09852603858153797,
+  "ratio": 25.60166011662253,
+  "ridge_ratio": 23.950549552680524,
+  "rmse_add": 0.08795179601347392,
+  "rmse_full": 0.09024673405691813,
+  "prompt": "After John and Tom finished work, Tom gave the keys to",
+  "clean": 1.9186782836914062
+ }
+]

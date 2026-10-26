@@ -1,0 +1,69 @@
+{
+ "status": "DESCRIPTIVE: audit quantities for the corrections ledger (review round); previously inspected captures",
+ "dk_gap": {
+  "GPT-2": {
+   "n": 12,
+   "S_bottom_rel_median": 0.03363993780853336,
+   "S_top_rel_median": 0.5447318192766064,
+   "J_bottom_rel_median": 0.0029468721616928983,
+   "J_top_rel_median": 0.1273235113052256
+  },
+  "Qwen3.5-9B": {
+   "n": 15,
+   "S_bottom_rel_median": 0.026714751283995416,
+   "S_top_rel_median": 0.4523971247917731,
+   "J_bottom_rel_median": 0.00316945857718259,
+   "J_top_rel_median": 0.08132596790452293
+  }
+ },
+ "edge_cos": {
+  "n": 185,
+  "rho_cos_sd_ratio": -0.8957829498502711,
+  "rho_cos_abs_slope": -0.9491698570941207,
+  "n_strong_sd_ratio_armB": 107
+ },
+ "reverse_survivors": {
+  "n_survivors": 9,
+  "n_below_0p10": 1,
+  "below": [
+   "agreement_matched_gpt2_5_10_2.npz"
+  ]
+ },
+ "chart_cells": {
+  "xseed_cells_both_sig": [
+   3,
+   8
+  ],
+  "xseed_cells_both_sig_names": [
+   "GPT-2 capital",
+   "GPT-2 ioi",
+   "Qwen3.5 capital"
+  ],
+  "own_chart_max_fraction_cell": "Qwen3.5 induction",
+  "own_chart_fractions": {
+   "GPT-2 agreement": 0.5555555555555556,
+   "GPT-2 capital": 0.125,
+   "GPT-2 greater": 0.7,
+   "GPT-2 induction": 0.5428571428571428,
+   "GPT-2 ioi": 0.7058823529411765,
+   "Qwen3-8B induction": 0.0,
+   "Qwen3-8B ioi": 0.6,
+   "Qwen3.5 capital": 0.5,
+   "Qwen3.5 induction": 0.875,
+   "Qwen3.5 ioi": 0.8
+  },
+  "own_chart_ratio_screen_dropped": 15,
+  "own_chart_sd_ratio_max": 50.0,
+  "xseed_ratio_screen_dropped": 0
+ },
+ "tl_calibration": {
+  "file": "actsg_5_10_0.npz",
+  "n_single": 448,
+  "calibration_rows": 224,
+  "calibration_rows_in_test_half": 113
+ },
+ "taylor_dup": {
+  "GPT-2": true,
+  "Qwen3.5": true
+ }
+}

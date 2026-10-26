@@ -1,0 +1,18 @@
+{
+ "gpt2": {
+  "n": 12,
+  "indistinguishable": 12,
+  "diverges": 12,
+  "both": 12,
+  "cross_from_single": 17.306062755573294,
+  "cross_from_joint": 0.030528335778399397
+ },
+ "qwen": {
+  "n": 15,
+  "indistinguishable": 14,
+  "diverges": 12,
+  "both": 11,
+  "cross_from_single": 2.7875553998715796,
+  "cross_from_joint": 0.04300904488778888
+ }
+}

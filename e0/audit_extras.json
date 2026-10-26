@@ -1,0 +1,26 @@
+{
+ "status": "DESCRIPTIVE: audit quantities for the corrections ledger; previously inspected captures",
+ "n_matched": 185,
+ "donor_duplicate_captures": [
+  72,
+  185
+ ],
+ "fig1b": {
+  "single": 1.6413428963088958,
+  "median": 1.8624894039370947,
+  "n": 34,
+  "median_distinct": 1.8335549145386725,
+  "n_distinct": 25
+ },
+ "qc_info": {
+  "n": 31,
+  "design_median_of_ratios": 26837.09373033568,
+  "design_ratio_of_medians": 24211.60037633633,
+  "plugin_median_of_ratios": 14863.811551465444,
+  "design_own_family_whitening_median": 5976.596274656795
+ },
+ "cross_seed_same_prompt": [
+  10,
+  120
+ ]
+}

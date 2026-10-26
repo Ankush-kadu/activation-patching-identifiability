@@ -1,0 +1,9 @@
+# Versions used to produce and verify the ledger (Python 3.13.5).
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+sympy==1.14.0
+pytest==9.0.2
+# Only the capture scripts (GPU) need these; the ledger imports torch/transformers but runs on CPU.
+torch==2.11.0
+transformers==5.8.0.dev0

@@ -1,0 +1,1199 @@
+{
+ "task": "induction",
+ "model": "gpt2",
+ "dtype": "torch.float32",
+ "n_kept": 35,
+ "n_screened_out": 0,
+ "rows": [
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 0,
+   "std_Yjm": 6.741228436867253,
+   "file": "induction_matched_gpt2_5_7_0.npz",
+   "box_S_over_Jm": [
+    1.0849233983080693,
+    1.048701243316622
+   ],
+   "box_S_over_J": [
+    2.881219944609471,
+    3.6285194883171843
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 2.496089345520949e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.573875506267192e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.536129585413634e-05
+   },
+   "prompt": " WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated gesture WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated",
+   "clean": 20.290199279785156
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 1,
+   "std_Yjm": 5.366654595393609,
+   "file": "induction_matched_gpt2_5_7_1.npz",
+   "box_S_over_Jm": [
+    1.011091803801475,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.0072389359144194,
+    4.722441511164695
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 2.4741256279787886e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.4216295078499335e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.8002292135737277e-05
+   },
+   "prompt": "izzalay PrivateQaedanot incomeBofacebook tele medicGHodedizzalay PrivateQaedanot incomeBofacebook tele medicGH",
+   "clean": 16.74915313720703
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 2,
+   "std_Yjm": 2.191941811973875,
+   "file": "induction_matched_gpt2_5_7_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0646705303475232
+   ],
+   "box_S_over_J": [
+    1.870452809370077,
+    4.658249705352106
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 6.154453634241988e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.61049169607505e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.677173397200553e-05
+   },
+   "prompt": " multiplayer incor horcipl depression leap periods model exposedstration 1969 Brain multiplayer incor horcipl depression leap periods model exposedstration 1969",
+   "clean": 17.875469207763672
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 3,
+   "std_Yjm": 7.372046655347856,
+   "file": "induction_matched_gpt2_5_7_3.npz",
+   "box_S_over_Jm": [
+    1.1236456305540163,
+    1.0
+   ],
+   "box_S_over_J": [
+    3.5754647094753995,
+    3.2332151547604053
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 3.630594725463452e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.1745430325752605e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00018911595785144197
+   },
+   "prompt": " hed became employees functions daily\u00a9 breastsmented cityeth Networkonic hed became employees functions daily\u00a9 breastsmented cityeth Network",
+   "clean": 23.789093017578125
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 4,
+   "std_Yjm": 3.5744634443461782,
+   "file": "induction_matched_gpt2_5_7_4.npz",
+   "box_S_over_Jm": [
+    1.187099629936876,
+    1.0
+   ],
+   "box_S_over_J": [
+    4.3541727953253755,
+    4.648464389851341
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.1595862317612175e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.268833434745353e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.110679879450975e-05
+   },
+   "prompt": " brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land governor brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land",
+   "clean": 13.326560974121094
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 0,
+   "std_Yjm": 5.2031742149693185,
+   "file": "induction_matched_gpt2_5_10_0.npz",
+   "box_S_over_Jm": [
+    1.0849233983080693,
+    1.099686962590611
+   ],
+   "box_S_over_J": [
+    2.881219944609471,
+    4.656680782354989
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 8.206476872416213e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.4927035242854117e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 8.010578732890394e-05
+   },
+   "prompt": " WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated gesture WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated",
+   "clean": 20.290199279785156
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 1,
+   "std_Yjm": 2.810146503979451,
+   "file": "induction_matched_gpt2_5_10_1.npz",
+   "box_S_over_Jm": [
+    1.011091803801475,
+    1.1215099602973728
+   ],
+   "box_S_over_J": [
+    2.0072389359144194,
+    2.1537318061260042
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.6451534194778647e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.5791981999599334e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.0001528324822152413
+   },
+   "prompt": "izzalay PrivateQaedanot incomeBofacebook tele medicGHodedizzalay PrivateQaedanot incomeBofacebook tele medicGH",
+   "clean": 16.74915313720703
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 2,
+   "std_Yjm": 1.452893619550712,
+   "file": "induction_matched_gpt2_5_10_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.407295445840823
+   ],
+   "box_S_over_J": [
+    1.870452809370077,
+    2.1109431726185037
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 7.29470972925418e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.5753516489960128e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.361776807307511e-05
+   },
+   "prompt": " multiplayer incor horcipl depression leap periods model exposedstration 1969 Brain multiplayer incor horcipl depression leap periods model exposedstration 1969",
+   "clean": 17.875469207763672
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 3,
+   "std_Yjm": 5.055309642167458,
+   "file": "induction_matched_gpt2_5_10_3.npz",
+   "box_S_over_Jm": [
+    1.1236456305540163,
+    1.0
+   ],
+   "box_S_over_J": [
+    3.5754647094753995,
+    2.424239568785708
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 3.97998858709585e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.0183688324891236e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 7.922806803544078e-06
+   },
+   "prompt": " hed became employees functions daily\u00a9 breastsmented cityeth Networkonic hed became employees functions daily\u00a9 breastsmented cityeth Network",
+   "clean": 23.789093017578125
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 4,
+   "std_Yjm": 1.8084747971124033,
+   "file": "induction_matched_gpt2_5_10_4.npz",
+   "box_S_over_Jm": [
+    1.187099629936876,
+    1.0
+   ],
+   "box_S_over_J": [
+    4.3541727953253755,
+    3.4264298684856804
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 1.6627144837948721e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00011601397483911667
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.4843687150491196e-05
+   },
+   "prompt": " brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land governor brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land",
+   "clean": 13.326560974121094
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 0,
+   "std_Yjm": 3.373753531183755,
+   "file": "induction_matched_gpt2_6_9_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.1800633238162113
+   ],
+   "box_S_over_J": [
+    3.5839195779165505,
+    4.81223057564218
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 3.210136746959665e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.6182344493069406e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.9693330177331487e-06
+   },
+   "prompt": " WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated gesture WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated",
+   "clean": 20.290199279785156
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 1,
+   "std_Yjm": 2.779546720517543,
+   "file": "induction_matched_gpt2_6_9_1.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0080703954084589
+   ],
+   "box_S_over_J": [
+    1.8829981700341896,
+    4.0117967485596475
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 2.032818816519383e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.097933627081387e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.9215847978542325e-06
+   },
+   "prompt": "izzalay PrivateQaedanot incomeBofacebook tele medicGHodedizzalay PrivateQaedanot incomeBofacebook tele medicGH",
+   "clean": 16.74915313720703
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 2,
+   "std_Yjm": 1.2616746221668578,
+   "file": "induction_matched_gpt2_6_9_2.npz",
+   "box_S_over_Jm": [
+    1.1959587918601409,
+    1.045040684275703
+   ],
+   "box_S_over_J": [
+    2.588999648648998,
+    6.313547614402097
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.929110579884897e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 9.070557175209241e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.9072121833487305e-05
+   },
+   "prompt": " multiplayer incor horcipl depression leap periods model exposedstration 1969 Brain multiplayer incor horcipl depression leap periods model exposedstration 1969",
+   "clean": 17.875469207763672
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 3,
+   "std_Yjm": 3.7239608063074088,
+   "file": "induction_matched_gpt2_6_9_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0852291628175443
+   ],
+   "box_S_over_J": [
+    3.3171281764735654,
+    3.1247138060633746
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 1.0907828262623772e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.1998988718066045e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00017603442384796962
+   },
+   "prompt": " hed became employees functions daily\u00a9 breastsmented cityeth Networkonic hed became employees functions daily\u00a9 breastsmented cityeth Network",
+   "clean": 23.789093017578125
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 4,
+   "std_Yjm": 1.4287549418021832,
+   "file": "induction_matched_gpt2_6_9_4.npz",
+   "box_S_over_Jm": [
+    1.3392661270519424,
+    1.0412609804539357
+   ],
+   "box_S_over_J": [
+    2.6954917615542926,
+    2.8508950749083692
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 7.080491091204532e-06
+   },
+   "res_Jm": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 0.00011747758469747364
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00011394952887940743
+   },
+   "prompt": " brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land governor brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land",
+   "clean": 13.326560974121094
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 0,
+   "std_Yjm": 4.49607244480222,
+   "file": "induction_matched_gpt2_7_9_0.npz",
+   "box_S_over_Jm": [
+    1.048701243316622,
+    1.1800633238162113
+   ],
+   "box_S_over_J": [
+    3.6285194883171843,
+    4.81223057564218
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.8917896702308447e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.3938040923117793e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00011562943940870556
+   },
+   "prompt": " WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated gesture WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated",
+   "clean": 20.290199279785156
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 1,
+   "std_Yjm": 3.945066383889007,
+   "file": "induction_matched_gpt2_7_9_1.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0080703954084589
+   ],
+   "box_S_over_J": [
+    4.722441511164695,
+    4.0117967485596475
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 3.1715460836266384e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.867815539128657e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.0800061073443865e-06
+   },
+   "prompt": "izzalay PrivateQaedanot incomeBofacebook tele medicGHodedizzalay PrivateQaedanot incomeBofacebook tele medicGH",
+   "clean": 16.74915313720703
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 2,
+   "std_Yjm": 2.0868293747219298,
+   "file": "induction_matched_gpt2_7_9_2.npz",
+   "box_S_over_Jm": [
+    1.0646705303475232,
+    1.045040684275703
+   ],
+   "box_S_over_J": [
+    4.658249705352106,
+    6.313547614402097
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 3.2558457842335064e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.021571713544275e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.000108578088378294
+   },
+   "prompt": " multiplayer incor horcipl depression leap periods model exposedstration 1969 Brain multiplayer incor horcipl depression leap periods model exposedstration 1969",
+   "clean": 17.875469207763672
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 3,
+   "std_Yjm": 4.544338781186698,
+   "file": "induction_matched_gpt2_7_9_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0358340930043584
+   ],
+   "box_S_over_J": [
+    3.2332151547604053,
+    2.982489968108261
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 9.72885671329418e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.6788789081560678e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.548588610670107e-06
+   },
+   "prompt": " hed became employees functions daily\u00a9 breastsmented cityeth Networkonic hed became employees functions daily\u00a9 breastsmented cityeth Network",
+   "clean": 23.789093017578125
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 4,
+   "std_Yjm": 2.486602129721098,
+   "file": "induction_matched_gpt2_7_9_4.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.029761740067733
+   ],
+   "box_S_over_J": [
+    4.648464389851341,
+    2.819411010492625
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 4.692709315026489e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.380690339651393e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 8.615780539408445e-05
+   },
+   "prompt": " brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land governor brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land",
+   "clean": 13.326560974121094
+  },
+  {
+   "pair": [
+    7,
+    8
+   ],
+   "seed": 0,
+   "std_Yjm": 4.807867159709205,
+   "file": "induction_matched_gpt2_7_8_0.npz",
+   "box_S_over_Jm": [
+    1.048701243316622,
+    1.0906407674449696
+   ],
+   "box_S_over_J": [
+    3.6285194883171843,
+    4.127718892907519
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 4.311646264931065e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.347425399092308e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.245166934347799e-06
+   },
+   "prompt": " WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated gesture WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated",
+   "clean": 20.290199279785156
+  },
+  {
+   "pair": [
+    7,
+    8
+   ],
+   "seed": 1,
+   "std_Yjm": 3.1991763066492163,
+   "file": "induction_matched_gpt2_7_8_1.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.093593941711815
+   ],
+   "box_S_over_J": [
+    4.722441511164695,
+    1.6403908809159793
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 3.1111889464536123e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.457959490172448e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.257463936623575e-06
+   },
+   "prompt": "izzalay PrivateQaedanot incomeBofacebook tele medicGHodedizzalay PrivateQaedanot incomeBofacebook tele medicGH",
+   "clean": 16.74915313720703
+  },
+  {
+   "pair": [
+    7,
+    8
+   ],
+   "seed": 2,
+   "std_Yjm": 1.778631085324581,
+   "file": "induction_matched_gpt2_7_8_2.npz",
+   "box_S_over_Jm": [
+    1.0646705303475232,
+    1.0
+   ],
+   "box_S_over_J": [
+    4.658249705352106,
+    2.3391165871789865
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 3.4435640737847604e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.6809222111178124e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.3089447925465808e-05
+   },
+   "prompt": " multiplayer incor horcipl depression leap periods model exposedstration 1969 Brain multiplayer incor horcipl depression leap periods model exposedstration 1969",
+   "clean": 17.875469207763672
+  },
+  {
+   "pair": [
+    7,
+    8
+   ],
+   "seed": 3,
+   "std_Yjm": 4.431270844637679,
+   "file": "induction_matched_gpt2_7_8_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    3.2332151547604053,
+    2.520633500099754
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 4.977699960716805e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 7.575554985117317e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.6824003832192975e-05
+   },
+   "prompt": " hed became employees functions daily\u00a9 breastsmented cityeth Networkonic hed became employees functions daily\u00a9 breastsmented cityeth Network",
+   "clean": 23.789093017578125
+  },
+  {
+   "pair": [
+    7,
+    8
+   ],
+   "seed": 4,
+   "std_Yjm": 3.2753334623422377,
+   "file": "induction_matched_gpt2_7_8_4.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.5724584875823104
+   ],
+   "box_S_over_J": [
+    4.648464389851341,
+    2.358687759402135
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 4.662593374061663e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.289242140140473e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.70885817406613e-05
+   },
+   "prompt": " brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land governor brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land",
+   "clean": 13.326560974121094
+  },
+  {
+   "pair": [
+    8,
+    9
+   ],
+   "seed": 0,
+   "std_Yjm": 2.9038816883161487,
+   "file": "induction_matched_gpt2_8_9_0.npz",
+   "box_S_over_Jm": [
+    1.0906407674449696,
+    1.1800633238162113
+   ],
+   "box_S_over_J": [
+    4.127718892907519,
+    4.81223057564218
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 2.8701045706531738e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.495943561974213e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 7.834488434209073e-06
+   },
+   "prompt": " WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated gesture WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated",
+   "clean": 20.290199279785156
+  },
+  {
+   "pair": [
+    8,
+    9
+   ],
+   "seed": 1,
+   "std_Yjm": 1.773459647474242,
+   "file": "induction_matched_gpt2_8_9_1.npz",
+   "box_S_over_Jm": [
+    1.093593941711815,
+    1.0080703954084589
+   ],
+   "box_S_over_J": [
+    1.6403908809159793,
+    4.0117967485596475
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 5.533952243011291e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.377479649815948e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00010197108120523561
+   },
+   "prompt": "izzalay PrivateQaedanot incomeBofacebook tele medicGHodedizzalay PrivateQaedanot incomeBofacebook tele medicGH",
+   "clean": 16.74915313720703
+  },
+  {
+   "pair": [
+    8,
+    9
+   ],
+   "seed": 2,
+   "std_Yjm": 1.35501786022149,
+   "file": "induction_matched_gpt2_8_9_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.045040684275703
+   ],
+   "box_S_over_J": [
+    2.3391165871789865,
+    6.313547614402097
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.6452356887740766e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 8.44571288160317e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.4632935203455174e-05
+   },
+   "prompt": " multiplayer incor horcipl depression leap periods model exposedstration 1969 Brain multiplayer incor horcipl depression leap periods model exposedstration 1969",
+   "clean": 17.875469207763672
+  },
+  {
+   "pair": [
+    8,
+    9
+   ],
+   "seed": 3,
+   "std_Yjm": 2.945976112531672,
+   "file": "induction_matched_gpt2_8_9_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0358340930043584
+   ],
+   "box_S_over_J": [
+    2.520633500099754,
+    2.982489968108261
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 7.222318728243472e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 7.769303863798363e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.8083462571237502e-05
+   },
+   "prompt": " hed became employees functions daily\u00a9 breastsmented cityeth Networkonic hed became employees functions daily\u00a9 breastsmented cityeth Network",
+   "clean": 23.789093017578125
+  },
+  {
+   "pair": [
+    8,
+    9
+   ],
+   "seed": 4,
+   "std_Yjm": 1.4236636321441618,
+   "file": "induction_matched_gpt2_8_9_4.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.1864929991311326
+   ],
+   "box_S_over_J": [
+    1.5000000178247437,
+    3.248529534028618
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 7.236571025892975e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.9474427086879404e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.766557864360211e-05
+   },
+   "prompt": " brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land governor brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land",
+   "clean": 13.326560974121094
+  },
+  {
+   "pair": [
+    9,
+    10
+   ],
+   "seed": 0,
+   "std_Yjm": 3.3694958973451556,
+   "file": "induction_matched_gpt2_9_10_0.npz",
+   "box_S_over_Jm": [
+    1.1800633238162113,
+    1.1718363058375307
+   ],
+   "box_S_over_J": [
+    4.81223057564218,
+    4.962200872695955
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 2.0186142679846653e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00014321406489373485
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 9.006193219441685e-05
+   },
+   "prompt": " WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated gesture WallaceMerbury opponent admitted Su gen15 fighting lengthy motivated",
+   "clean": 20.290199279785156
+  },
+  {
+   "pair": [
+    9,
+    10
+   ],
+   "seed": 1,
+   "std_Yjm": 2.3476611338423075,
+   "file": "induction_matched_gpt2_9_10_1.npz",
+   "box_S_over_Jm": [
+    1.0080703954084589,
+    1.3482405599698484
+   ],
+   "box_S_over_J": [
+    4.0117967485596475,
+    2.5891420309332394
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 2.2970112095770873e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.6248926263824384e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.0001294099910683397
+   },
+   "prompt": "izzalay PrivateQaedanot incomeBofacebook tele medicGHodedizzalay PrivateQaedanot incomeBofacebook tele medicGH",
+   "clean": 16.74915313720703
+  },
+  {
+   "pair": [
+    9,
+    10
+   ],
+   "seed": 2,
+   "std_Yjm": 2.158547808121592,
+   "file": "induction_matched_gpt2_9_10_2.npz",
+   "box_S_over_Jm": [
+    1.045040684275703,
+    2.907708893303592
+   ],
+   "box_S_over_J": [
+    6.313547614402097,
+    4.361563347925155
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.991925899959032e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.771579567723577e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.000280877372477762
+   },
+   "prompt": " multiplayer incor horcipl depression leap periods model exposedstration 1969 Brain multiplayer incor horcipl depression leap periods model exposedstration 1969",
+   "clean": 17.875469207763672
+  },
+  {
+   "pair": [
+    9,
+    10
+   ],
+   "seed": 3,
+   "std_Yjm": 3.655811905084148,
+   "file": "induction_matched_gpt2_9_10_3.npz",
+   "box_S_over_Jm": [
+    1.0358340930043584,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.982489968108261,
+    2.424239568785708
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.2143448969763386e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.173844130569069e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.0715831409628752e-05
+   },
+   "prompt": " hed became employees functions daily\u00a9 breastsmented cityeth Networkonic hed became employees functions daily\u00a9 breastsmented cityeth Network",
+   "clean": 23.789093017578125
+  },
+  {
+   "pair": [
+    9,
+    10
+   ],
+   "seed": 4,
+   "std_Yjm": 1.795410751761025,
+   "file": "induction_matched_gpt2_9_10_4.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.1428241225564715
+   ],
+   "box_S_over_J": [
+    2.737925581025352,
+    3.9158067079534336
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 3.751005063259757e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.1685813366305449e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00016312342982931113
+   },
+   "prompt": " brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land governor brave Palmer Fairy mystery distances prohibition insectsitting letting cleared Land",
+   "clean": 13.326560974121094
+  }
+ ]
+}

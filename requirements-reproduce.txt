@@ -1,0 +1,10 @@
+# Installation specification for the recorded verification environment.
+# Original requirements.txt is preserved under MANIFEST.sha256.
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+sympy==1.14.0
+pytest==9.0.2
+torch==2.11.0
+transformers @ git+https://github.com/huggingface/transformers.git@84db914aafda0a9cb59baad201f2e5d16e6ca550
+matplotlib==3.10.6

@@ -1,0 +1,689 @@
+{
+ "task": "greater",
+ "model": "gpt2",
+ "dtype": "torch.float32",
+ "n_kept": 20,
+ "n_screened_out": 0,
+ "rows": [
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 0,
+   "std_Yjm": 0.502713969424918,
+   "file": "greater_matched_gpt2_5_7_0.npz",
+   "box_S_over_Jm": [
+    1.010593042179036,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.5158895722730679,
+    2.0422714311208874
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 3.9668240229979e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.070564969561265e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 7.516797926521851e-05
+   },
+   "prompt": "The plague lasted from the year 1745 to the year 17",
+   "clean": 4.11773681640625
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 1,
+   "std_Yjm": 0.3703039312276587,
+   "file": "greater_matched_gpt2_5_7_1.npz",
+   "box_S_over_Jm": [
+    1.1630680800814996,
+    1.6449811617648011
+   ],
+   "box_S_over_J": [
+    2.3261378123339345,
+    2.5834342811877855
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 5.3901710464135945e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.1206122257230555e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.5413152071918976e-05
+   },
+   "prompt": "The drought lasted from the year 1740 to the year 17",
+   "clean": 4.993988037109375
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 2,
+   "std_Yjm": 0.28446516265496463,
+   "file": "greater_matched_gpt2_5_7_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.1567913090221307
+   ],
+   "box_S_over_J": [
+    1.6226274843065922,
+    1.769383781981979
+   ],
+   "res_S": {
+    "n_distinct": 433,
+    "n": 448,
+    "step_over_sd": 7.044877995499045e-05
+   },
+   "res_Jm": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 5.364027327665353e-05
+   },
+   "res_J": {
+    "n_distinct": 254,
+    "n": 256,
+    "step_over_sd": 4.929960545462443e-05
+   },
+   "prompt": "The plague lasted from the year 1730 to the year 17",
+   "clean": 3.2225341796875
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 3,
+   "std_Yjm": 0.2814739180957599,
+   "file": "greater_matched_gpt2_5_7_3.npz",
+   "box_S_over_Jm": [
+    1.1925663750015367,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.7888495440236372,
+    1.5644760903049153
+   ],
+   "res_S": {
+    "n_distinct": 416,
+    "n": 448,
+    "step_over_sd": 8.406296221981013e-05
+   },
+   "res_Jm": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 0.00010842062501370963
+   },
+   "res_J": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 5.173843616537228e-05
+   },
+   "prompt": "The plague lasted from the year 1723 to the year 17",
+   "clean": 4.630218505859375
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 4,
+   "std_Yjm": 0.5982217491273796,
+   "file": "greater_matched_gpt2_5_7_4.npz",
+   "box_S_over_Jm": [
+    1.3233753083358528,
+    1.4592366245472
+   ],
+   "box_S_over_J": [
+    1.9850629922174468,
+    2.188854943085345
+   ],
+   "res_S": {
+    "n_distinct": 417,
+    "n": 448,
+    "step_over_sd": 3.513603685968185e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00012753455624739363
+   },
+   "res_J": {
+    "n_distinct": 224,
+    "n": 256,
+    "step_over_sd": 9.601428551731672e-05
+   },
+   "prompt": "The revolt lasted from the year 1757 to the year 17",
+   "clean": 4.9372100830078125
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 0,
+   "std_Yjm": 0.28769659376886925,
+   "file": "greater_matched_gpt2_5_10_0.npz",
+   "box_S_over_Jm": [
+    1.010593042179036,
+    1.0730757444745513
+   ],
+   "box_S_over_J": [
+    1.5158895722730679,
+    1.6765732453978406
+   ],
+   "res_S": {
+    "n_distinct": 443,
+    "n": 448,
+    "step_over_sd": 6.465427589097842e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.303778144401203e-05
+   },
+   "res_J": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 6.146341075515715e-05
+   },
+   "prompt": "The plague lasted from the year 1745 to the year 17",
+   "clean": 4.11773681640625
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 1,
+   "std_Yjm": 0.30798232665859765,
+   "file": "greater_matched_gpt2_5_10_1.npz",
+   "box_S_over_Jm": [
+    1.1630680800814996,
+    1.4235758532323268
+   ],
+   "box_S_over_J": [
+    2.3261378123339345,
+    2.481358228228213
+   ],
+   "res_S": {
+    "n_distinct": 421,
+    "n": 448,
+    "step_over_sd": 6.539172428920288e-05
+   },
+   "res_Jm": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 4.954436583438946e-05
+   },
+   "res_J": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 5.705610426890002e-05
+   },
+   "prompt": "The drought lasted from the year 1740 to the year 17",
+   "clean": 4.993988037109375
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 2,
+   "std_Yjm": 0.18736073470695158,
+   "file": "greater_matched_gpt2_5_10_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.6226274843065922,
+    1.791097615646042
+   ],
+   "res_S": {
+    "n_distinct": 431,
+    "n": 448,
+    "step_over_sd": 0.00011364230289948161
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 8.144069826778843e-05
+   },
+   "res_J": {
+    "n_distinct": 254,
+    "n": 256,
+    "step_over_sd": 8.519166279498263e-05
+   },
+   "prompt": "The plague lasted from the year 1730 to the year 17",
+   "clean": 3.2225341796875
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 3,
+   "std_Yjm": 0.1716826918389034,
+   "file": "greater_matched_gpt2_5_10_3.npz",
+   "box_S_over_Jm": [
+    1.1925663750015367,
+    1.0940110604880005
+   ],
+   "box_S_over_J": [
+    1.7888495440236372,
+    2.372434854088832
+   ],
+   "res_S": {
+    "n_distinct": 415,
+    "n": 448,
+    "step_over_sd": 0.00014321996201515486
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 8.887785308502689e-05
+   },
+   "res_J": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 7.513824823434459e-05
+   },
+   "prompt": "The plague lasted from the year 1723 to the year 17",
+   "clean": 4.630218505859375
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 4,
+   "std_Yjm": 0.39577062823684384,
+   "file": "greater_matched_gpt2_5_10_4.npz",
+   "box_S_over_Jm": [
+    1.3233753083358528,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.9850629922174468,
+    1.9050335330185955
+   ],
+   "res_S": {
+    "n_distinct": 417,
+    "n": 448,
+    "step_over_sd": 5.002308280107399e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.855462728620825e-05
+   },
+   "res_J": {
+    "n_distinct": 225,
+    "n": 256,
+    "step_over_sd": 5.473690400023325e-05
+   },
+   "prompt": "The revolt lasted from the year 1757 to the year 17",
+   "clean": 4.9372100830078125
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 0,
+   "std_Yjm": 1.1888344006324978,
+   "file": "greater_matched_gpt2_6_9_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.5000000058324843,
+    1.6168604443939076
+   ],
+   "res_S": {
+    "n_distinct": 446,
+    "n": 448,
+    "step_over_sd": 1.6074297544862686e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.2835083720980682e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.345989359364036e-05
+   },
+   "prompt": "The plague lasted from the year 1745 to the year 17",
+   "clean": 4.11773681640625
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 1,
+   "std_Yjm": 0.7139209250557517,
+   "file": "greater_matched_gpt2_6_9_1.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.6140060289134313
+   ],
+   "box_S_over_J": [
+    2.0000015883431836,
+    2.421009055753649
+   ],
+   "res_S": {
+    "n_distinct": 422,
+    "n": 448,
+    "step_over_sd": 2.3953684237993382e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.000106866100481005
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00016736986073360627
+   },
+   "prompt": "The drought lasted from the year 1740 to the year 17",
+   "clean": 4.993988037109375
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 2,
+   "std_Yjm": 0.7831570660723413,
+   "file": "greater_matched_gpt2_6_9_2.npz",
+   "box_S_over_Jm": [
+    1.1166290449235867,
+    1.3506655399333307
+   ],
+   "box_S_over_J": [
+    1.6749435651119478,
+    2.0259983255116043
+   ],
+   "res_S": {
+    "n_distinct": 434,
+    "n": 448,
+    "step_over_sd": 2.178174352772124e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.9483689445624597e-05
+   },
+   "res_J": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 1.909755138526001e-05
+   },
+   "prompt": "The plague lasted from the year 1730 to the year 17",
+   "clean": 3.2225341796875
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 3,
+   "std_Yjm": 0.86413985418567,
+   "file": "greater_matched_gpt2_6_9_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.4999999780835176,
+    1.5000000137910383
+   ],
+   "res_S": {
+    "n_distinct": 415,
+    "n": 448,
+    "step_over_sd": 2.1046575492792023e-05
+   },
+   "res_Jm": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 1.7657777255140326e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.6536574783294868e-05
+   },
+   "prompt": "The plague lasted from the year 1723 to the year 17",
+   "clean": 4.630218505859375
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 4,
+   "std_Yjm": 1.6657792895153802,
+   "file": "greater_matched_gpt2_6_9_4.npz",
+   "box_S_over_Jm": [
+    1.3321714721867755,
+    1.1671956125278589
+   ],
+   "box_S_over_J": [
+    1.9982571787922747,
+    1.75079342848833
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 1.070249837560344e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.8320301084952486e-05
+   },
+   "res_J": {
+    "n_distinct": 225,
+    "n": 256,
+    "step_over_sd": 4.009119924352609e-05
+   },
+   "prompt": "The revolt lasted from the year 1757 to the year 17",
+   "clean": 4.9372100830078125
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 0,
+   "std_Yjm": 1.2632259565316801,
+   "file": "greater_matched_gpt2_7_9_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.0422714311208874,
+    1.6168604443939076
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.5375274591512896e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.0396119093351326e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.0323916658691038e-05
+   },
+   "prompt": "The plague lasted from the year 1745 to the year 17",
+   "clean": 4.11773681640625
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 1,
+   "std_Yjm": 0.7572405503928193,
+   "file": "greater_matched_gpt2_7_9_1.npz",
+   "box_S_over_Jm": [
+    1.6449811617648011,
+    1.6140060289134313
+   ],
+   "box_S_over_J": [
+    2.5834342811877855,
+    2.421009055753649
+   ],
+   "res_S": {
+    "n_distinct": 422,
+    "n": 448,
+    "step_over_sd": 2.281038489872261e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.0301035264380614e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.058161854345108e-05
+   },
+   "prompt": "The drought lasted from the year 1740 to the year 17",
+   "clean": 4.993988037109375
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 2,
+   "std_Yjm": 0.8241531242557782,
+   "file": "greater_matched_gpt2_7_9_2.npz",
+   "box_S_over_Jm": [
+    1.1567913090221307,
+    1.3506655399333307
+   ],
+   "box_S_over_J": [
+    1.769383781981979,
+    2.0259983255116043
+   ],
+   "res_S": {
+    "n_distinct": 433,
+    "n": 448,
+    "step_over_sd": 2.1553105794002727e-05
+   },
+   "res_Jm": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 3.702901466588239e-05
+   },
+   "res_J": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 0.00010517687360788805
+   },
+   "prompt": "The plague lasted from the year 1730 to the year 17",
+   "clean": 3.2225341796875
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 3,
+   "std_Yjm": 0.887126259124017,
+   "file": "greater_matched_gpt2_7_9_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.5644760903049153,
+    1.5000000137910383
+   ],
+   "res_S": {
+    "n_distinct": 419,
+    "n": 448,
+    "step_over_sd": 2.0633174960644206e-05
+   },
+   "res_Jm": {
+    "n_distinct": 255,
+    "n": 256,
+    "step_over_sd": 0.00010320147040332537
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.3180646297549663e-05
+   },
+   "prompt": "The plague lasted from the year 1723 to the year 17",
+   "clean": 4.630218505859375
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 4,
+   "std_Yjm": 1.7635325234774495,
+   "file": "greater_matched_gpt2_7_9_4.npz",
+   "box_S_over_Jm": [
+    1.4592366245472,
+    1.1671956125278589
+   ],
+   "box_S_over_J": [
+    2.188854943085345,
+    1.75079342848833
+   ],
+   "res_S": {
+    "n_distinct": 419,
+    "n": 448,
+    "step_over_sd": 1.0511747332905712e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00012978600218054143
+   },
+   "res_J": {
+    "n_distinct": 225,
+    "n": 256,
+    "step_over_sd": 2.7900360083363636e-05
+   },
+   "prompt": "The revolt lasted from the year 1757 to the year 17",
+   "clean": 4.9372100830078125
+  }
+ ]
+}

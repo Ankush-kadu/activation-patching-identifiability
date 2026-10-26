@@ -1,0 +1,71 @@
+{
+ "cells": {
+  "gpt2 agreement": {
+   "captures": 9,
+   "cap_escapes": 8,
+   "prompts": 5,
+   "prompt_escapes": 4
+  },
+  "gpt2 capital": {
+   "captures": 19,
+   "cap_escapes": 19,
+   "prompts": 2,
+   "prompt_escapes": 2
+  },
+  "qwen35 capital": {
+   "captures": 6,
+   "cap_escapes": 6,
+   "prompts": 2,
+   "prompt_escapes": 2
+  },
+  "gpt2 greater": {
+   "captures": 20,
+   "cap_escapes": 20,
+   "prompts": 5,
+   "prompt_escapes": 5
+  },
+  "gpt2 induction": {
+   "captures": 35,
+   "cap_escapes": 31,
+   "prompts": 5,
+   "prompt_escapes": 1
+  },
+  "qwen3 induction": {
+   "captures": 11,
+   "cap_escapes": 9,
+   "prompts": 3,
+   "prompt_escapes": 1
+  },
+  "qwen35 induction": {
+   "captures": 16,
+   "cap_escapes": 11,
+   "prompts": 4,
+   "prompt_escapes": 1
+  },
+  "gpt2 ioi": {
+   "captures": 34,
+   "cap_escapes": 33,
+   "prompts": 5,
+   "prompt_escapes": 4
+  },
+  "qwen3 ioi": {
+   "captures": 15,
+   "cap_escapes": 12,
+   "prompts": 3,
+   "prompt_escapes": 2
+  },
+  "qwen35 ioi": {
+   "captures": 20,
+   "cap_escapes": 19,
+   "prompts": 4,
+   "prompt_escapes": 3
+  }
+ },
+ "prompts": 38,
+ "prompt_escapes": 25,
+ "p_prompt": 3.5055039802694662e-31,
+ "captures": 185,
+ "capture_escapes": 168,
+ "boot_lo": 0.8556082467292234,
+ "boot_reps": 2000
+}

@@ -1,0 +1,529 @@
+\documentclass{article}
+\usepackage[dblblindworkshop,final]{neurips_2026}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,booktabs,enumitem,xspace,multirow,array,tabularx,longtable}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{hidelinks,
+  pdftitle={What Can Activation Patching Actually Establish? Reachable-State Geometry and the Limits of Mechanistic Evidence},
+  pdfauthor={Ankush Kadu, Ananth Kalyanasundaram, Aswanth Krishnan},
+  pdfkeywords={activation patching, mechanistic interpretability, identifiability, experimental design, evaluation}}
+\usepackage{url}
+
+\input{claims}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\status}[1]{{\small\textsf{[#1]}}}
+\raggedbottom
+\tcbset{colback=black!3,colframe=black!45,boxrule=0.5pt,arc=1pt,left=5pt,right=5pt,top=3pt,bottom=3pt,
+        fonttitle=\bfseries\small,coltitle=black,colbacktitle=black!10,before skip=8pt,after skip=8pt}
+
+\title{What Can Activation Patching Actually Establish?\\
+       Reachable-State Geometry and the Limits of Mechanistic Evidence}
+
+\workshoptitle{TAE (Trust-AI-Eval): Can We Trust AI Evaluation?}
+\author{Ankush Kadu \qquad Ananth Kalyanasundaram \qquad Aswanth Krishnan\\
+  QpiAI, India}
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+A strong, stable activation-patching effect need not distinguish a hypothesised mechanism from nearby alternatives.
+We make this limit computable. For a declared mechanism class, an intervention family's \emph{blind space} consists
+of hypothesis differences that vanish on every state it reaches. The analyst chooses the intervention, but the
+network produces the state. These states determine the blind space without a readout. On analysed two-site operator slices, some hypothesis differences are exactly blind. The
+operator on the edge fixes the polynomial degree at which this begins: $\DstarAffine$ for affine slices,
+$\DstarRMSNorm$ for the stated normalisation slices, and no finite degree for the analysed softmax and gated slices. In the tested trained-transformer charts and polynomial classes, recompute single-site and joint designs have full
+rank. We therefore ask how weakly they constrain particular hypothesis differences. We re-analyse previously inspected
+captures using a difference named from training intervention states without readouts. On held-out states, its mean square
+(energy) is at least $10\times$ smaller under single-site than under joint patching in $\PredMTotalCount$ captures across $\PredCells$
+model--task cells. The generator of the classical one-at-a-time design meets the same threshold in $\OfatRowCount$. We also identify two
+pitfalls in comparing intervention families, and withdraw the claims they produced. On a published
+indirect-object-identification (IOI) edge, single-site evidence alone does not determine whether a head's measured
+effect carries over to other upstream states. Executing the missing four-point interventions, with the downstream
+head's output forced, measures this transport deviation directly. In the exploratory analysis on three base prompts, we compute its root mean square on each capture's tested grid
+as a percentage of that capture's downstream-only readout range. The median is $\AdqRmsTPct\%$. In a preregistered replication on
+$\RepPrompts$ fresh prompts from $\RepTemplates$ templates, template medians met both registered smallness criteria. That
+replication could not compare published with control heads, because most control contrasts were not resolved above
+float32 precision, so we report no published/control ratio and make no above-control claim.
+\end{abstract}
+
+\begingroup\let\thefootnote\relax\footnotetext{This version corrects errors found in the version submitted for review, which Appendix~\ref{app:corrections} records entry by entry. It also adds post-review analyses of the IOI result (\S\ref{sec:ioi}) and a preregistered replication (Appendix~\ref{app:replication}). Appendix~\ref{app:repro} links the code, data and claim ledger.}\endgroup
+
+% ============================================================== 1 ====
+\section{Introduction}
+\label{sec:intro}
+
+Activation patching tests a mechanistic hypothesis by replacing an internal activation, letting the network
+recompute, and reading the change in behaviour as evidence that ``head $X$ contributes $+0.5$'' or ``$A$ feeds
+$B$''. Before reading the change that way, we can ask which alternative mechanisms the experiment could have ruled
+out. Recent work argues that interpretability claims should state their intervention class and identification
+assumptions \citep{joshi2026causality,lin2026disclose}. We make the intervention side of that question checkable
+from the states a model actually reaches.
+
+Consider an edge $A\to B$, with one-dimensional summaries $a$ and $b$ (a \emph{chart}) of the sites' outputs.
+A mechanism hypothesis predicts the readout as a function of these coordinates. Patching $A$ lets $B$ recompute, here along a line $b=ma+c$. Patching $B$
+leaves $A$ at its clean value $a_0$. Single-site patching therefore visits two arms in the $(a,b)$ plane. Two
+mechanisms that differ by $g_R(a,b)=(a-a_0)(b-ma-c)$ agree on both arms, because one factor vanishes on each, so no
+amount of single-site data can separate them. Joint patching sets both outputs and can reach states off the arms, where $g_R\neq0$.
+For a non-flat edge, clamping can too: it holds $B$ at its clean output while $A$ is patched. Figure~\ref{fig:reachable}
+shows the same picture in one GPT-2 small capture. There the recompute arm is a thin band while the pinned arm remains a line. This illustrates weak
+identification in a trained model, not exact blindness (\S\ref{sec:practical}).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_reachable.pdf}
+\caption{Why single-site patching can leave hypothesis differences weakly constrained; $a$ and $b$ summarise the two
+sites' outputs. \emph{(a)} On an exact affine slice, single-site states lie on the blue recompute and pinned arms,
+where the hypothesis difference $g_R$ vanishes. The grey region, where $|g_R|$ is small, contains both arms.
+\emph{(b)} One GPT-2 small IOI capture (layer pair $(5,10)$, seed $0$, unembedding chart before whitening): single-site
+states (blue) form thin arms, while joint states (orange) at interpolation coefficient $\alpha=1$ spread across a region.
+\emph{(c)} Matching the joint family's $\alpha$ grid to the single-site grid broadens its range in this capture. The trained-model arms illustrate
+weak identification, not exact vanishing.}
+\label{fig:reachable}
+\end{figure}
+
+The underlying mathematics is classical. For polynomial classes, blind spaces describe classical aliasing
+\citep{pistone1996groebner}. We compare intervention families by which hypothesis differences they resolve, using the
+support preorder of information matrices \citep{pukelsheim2006optimal}. Recompute versus clamp parallels total versus
+controlled direct effects \citep{pearl2001direct}. Our contribution is to treat the network-produced internal states as the design points. In
+classical design the analyst writes them down. Under patch-and-recompute the analyst chooses the intervention and the
+\emph{network} produces the internal state, so the aliasing structure is a property of the trained model that can be
+measured without observing any readout. 
+
+Section~\ref{sec:theory} establishes what those states can separate on idealised slices.
+Sections~\ref{sec:practical} to~\ref{sec:predict} study weak identification in trained models, and
+Section~\ref{sec:pitfalls} examines misleading comparisons between designs. Section~\ref{sec:ioi} asks what
+single-site evidence establishes about an effect at other upstream states. These questions require three distinct
+kinds of evidence.
+
+\begin{tcolorbox}[title={Three kinds of claim}]
+\textbf{Exact slices} (\S\ref{sec:theory}). On the analysed two-site operator slices, in the stated polynomial
+coordinates, the operator on the edge fixes the first degree with a nonzero blind difference. It is $\DstarAffine$ for
+affine slices and $\DstarRMSNorm$ for the stated normalisation slices; the stated transcendental slices have no finite onset.\\[2pt]
+\textbf{Trained models} (\S\S\ref{sec:practical}--\ref{sec:pitfalls}). In the tested charts and polynomial classes,
+the recompute single-site and joint designs have full rank. Some directions are nevertheless much more weakly
+constrained by single-site evidence than by joint evidence. This is weak identification, not exact
+non-identifiability.\\[2pt]
+\textbf{Transport} (\S\ref{sec:ioi}). Without a model, single-site evidence does not determine whether a component's
+measured effect carries over to other states of an upstream component. Four-point interventions with the downstream output forced measure
+that transport deviation directly on the tested states.
+\end{tcolorbox}
+
+We make four contributions. First, we formalise the blind space of an intervention family relative to a declared mechanism class, and separate what a single-site patch measures from the claim that this effect transports (\S\ref{sec:setup}). Second, we prove on the analysed two-site slices that the operator fixes the onset of exact blindness ($d^*=\DstarAffine$, $\DstarRMSNorm$ or $\infty$ for affine, normalisation and transcendental slices), and that for affine single-site designs at fixed $d\ge2$, the unresolved polynomial fraction grows with site count (\S\ref{sec:theory}).
+
+Third, in a re-analysis of inspected captures, a direction named without readouts has at least $10\times$ less held-out energy under single-site than under joint patching in $\PredMTotalCount$ trained-model captures, much of it already present in the classical one-at-a-time design (\S\ref{sec:predict}); support mismatch and chart selection each invalidated one of our comparisons of intervention families (\S\ref{sec:pitfalls}). Fourth, single-site IOI evidence alone cannot determine transport. On three base prompts, the exploratory cubic predicts the contrast worse than zero; with downstream output forced, median capture RMS is small on tested grids. Replication on $\RepPrompts$ fresh prompts from $\RepTemplates$ templates met both registered smallness criteria for template medians but was floor-limited for controls, so the section stays exploratory (\S\ref{sec:ioi}). Table~\ref{tab:status} maps the claims to their status and keeps the failed and withdrawn claims visible.
+
+\begin{table}[t]
+\centering\footnotesize
+\caption{Main claims and all failed or withdrawn claims, with their status; the status terms are defined in Appendix~\ref{app:limits}. \emph{Withdrawn}: retracted, either already in the submitted version (marked $^{\dagger}$) or here.}
+\label{tab:status}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{0.2\textwidth} l@{}}
+\toprule
+claim & status & where \\
+\midrule
+On analysed slices, the operator on the edge fixes the onset $d^*$ ($\DstarAffine$, $\DstarRMSNorm$, $\infty$) & proved & \S\ref{sec:theory}, App.~\ref{app:proofs} \\
+For affine single-site designs at fixed $d\ge2$, the unresolved fraction grows with the number of sites & proved & \S\ref{sec:theory}, App.~\ref{app:proofs} \\
+\midrule
+A readout-free named direction is S-weak (weakly constrained by single-site relative to joint evidence) in $\PredMTotalCount$ captures; the one-at-a-time generator meets the same threshold in $\OfatRowCount$ & empirical & \S\ref{sec:predict} \\
+Support mismatch inflates reverse-escape counts ($\EdgeFrozenEscapes$ before grid matching; $\EdgeMatchedEscapes$ after); optimising a chart on the scored states creates a selection effect & empirical & \S\ref{sec:pitfalls} \\
+\midrule
+Single-site evidence alone does not determine the IOI transport deviation & exact & \S\ref{sec:ioi} \\
+Under the cubic working model the IOI transport deviation is weakly constrained and poorly predicted & exploratory & \S\ref{sec:ioi} \\
+The RMS of the executed IOI transport deviation is small on the tested grids (median over captures on three base prompts; template medians on $\RepPrompts$ fresh prompts from $\RepTemplates$ templates) & exploratory; registered smallness criteria replicated ($\RepHAbsCount$, $\RepHRelCount$ templates) & \S\ref{sec:ioi}, App.~\ref{app:replication} \\
+Whether the IOI transport deviation exceeds the level of heads with no claimed role & floor-limited & \S\ref{sec:ioi}, App.~\ref{app:replication} \\
+\midrule
+Mutual non-domination of single-site and joint evidence; empirical mutual non-domination of recompute and clamped single-site evidence in a chart optimised on the scored states & withdrawn$^{\dagger}$ & \S\ref{sec:pitfalls}, App.~\ref{app:matched}, \ref{app:chart} \\
+Specificity of single-site detection of non-additivity and its residual-bootstrap calibration; a reported number compatible with a much larger contribution; a representation no-separation claim; residual decay as a diagnostic of transcendence; auxiliary comparisons, angle stability, a Taylor check and numerical Davis--Kahan bounds & withdrawn & \S\ref{sec:ioi}, App.~\ref{app:corrections} \\
+Reciprocal cross-family degradation of a frozen circuit; representation-specific weak subspaces & failed & App.~\ref{app:negatives} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ============================================================== 2 ====
+\section{What a patching experiment observes}
+\label{sec:setup}
+
+The opening example illustrates the principle: an intervention family sees a mechanism only through the states it reaches. Fix a
+model and $k$ internal sites. A chart summarises the sites' outputs as a state $z\in\mathcal Z$, and a scalar readout
+$y$ records behaviour (a logit difference throughout). An \emph{intervention family} $Q$ produces chart states: its
+reachable set $R_Q=\{z(q):q\in Q\}$. A \emph{mechanism hypothesis} is a function $f:\mathcal Z\to\mathbb R$ that
+predicts the readout. The \emph{mechanism class} $\mathcal F$ is the set of alternatives the analyst agrees to
+consider. Here we take it to be a linear space of such functions.
+
+Without a declared $\mathcal F$, ``which mechanisms are
+distinguishable'' has no answer, because any finite body of evidence is consistent with infinitely many functions.
+The blind space collects the hypothesis differences that vanish on every reachable state, and one family resolves at
+least as much as another when its blind space is contained in the other's.
+
+\begin{definition}[Blind space; resolving preorder]
+\label{def:blind}
+The evidence map $\mathrm{Res}_Q:\mathcal F\to\mathbb R^{R_Q}$, $f\mapsto f|_{R_Q}$, restricts each
+hypothesis to the reachable set; its codomain is the space of real-valued functions on that set. Define
+\[
+  N(Q,\mathcal F)=\ker\bigl(\mathrm{Res}_Q|_{\mathcal F}\bigr),\qquad
+  Q_1\succeq_{\mathcal F}Q_2 :\iff N(Q_1,\mathcal F)\subseteq N(Q_2,\mathcal F).
+\]
+Two hypotheses are indistinguishable under $Q$ iff their difference lies in $N(Q,\mathcal F)$. Families are
+\emph{incomparable} when neither relation holds.
+\end{definition}
+
+Adding evidence can only shrink the blind space, since $N(Q_1\cup Q_2,\mathcal F)=N(Q_1,\mathcal F)\cap
+N(Q_2,\mathcal F)$.
+
+Three kinds of intervention matter here. Our interventions replace a site's complete output. For a chosen donor prompt, the coefficient $\alpha$
+moves that output a fraction of the way from its clean value to its value on the donor prompt: $\alpha=0$
+is clean, $\alpha=1$ is the donor, and values outside $[0,1]$ extrapolate. Under \emph{patch-and-recompute}, patching
+$A$ replaces its output and lets every downstream site recompute. On an analysed two-site slice, suppose $B$'s
+recomputed chart coordinate is a function $b=e(a)$ of $A$'s coordinate (the realised $A\to B$ map), and let
+$a_0,b_0$ be the clean coordinates. Single-site patching then has two arms. Patching $A$ reaches $(a,e(a))$, and
+patching $B$ with $A$ clean reaches $(a_0,b)$, so $R_S=\{(a,e(a))\}\cup\{(a_0,b)\}$. The graph relation is an
+idealisation of the analysed slice; in trained models, Sections~\ref{sec:practical} to~\ref{sec:pitfalls} use the
+recorded intervention states directly. Under \emph{clamping}, $B$ is held at its clean output while $A$ is patched.
+Together with patching $B$ while $A$ stays clean, this reaches $\{(a,b_0)\}\cup\{(a_0,b)\}$. \emph{Joint} patching sets
+both outputs.
+
+Every reported effect is conditional on its prompts, sites, replacement outputs and execution semantics. We therefore
+do not treat it as a context-independent contribution of a component, and \S\ref{sec:ioi} tests one such transport
+claim directly.
+
+% ============================================================== 3 ====
+\section{Exact geometry on operator slices}
+\label{sec:theory}
+
+We first analyse the single-site families just defined on a two-site slice whose reachable set can be written down. Proofs are in
+Appendix~\ref{app:proofs}. Here the mechanism class is the real polynomials in $(a,b)$ of total degree at most $d$,
+$\mathcal F=\mathcal P_{\le d}$. The blind space is $N(Q,\mathcal P_{\le d})=I(R_Q)\cap\mathcal P_{\le d}$, where the
+\emph{vanishing ideal} $I(R_Q)$ collects all polynomials that vanish on the reachable set. We write
+$d^*(Q)=\min\{d:N(Q,\mathcal P_{\le d})\neq0\}$ for the \emph{onset} of exact blindness.
+
+For the recompute single-site family on an affine edge $e(a)=ma+c$, with $b_0=ma_0+c$, every blind polynomial is a
+multiple of the single \emph{generator} $g_R=(a-a_0)(b-ma-c)$, so exact blindness begins at degree $2$. The clamped
+family has the degree-2 generator $g_C=(a-a_0)(b-b_0)$. Appendix~\ref{app:proofs} shows that the two designs
+can have the same Hilbert profile (the number of independent constraints the evidence imposes) while missing different
+hypothesis directions (Proposition~\ref{prop:incomparable}), so counts alone do not rank them. On this slice the
+generators differ by $g_C-g_R=m(a-a_0)^2$.
+
+More generally, suppose the recompute arm lies on an irreducible curve $P=0$. Single-site patching then cannot
+distinguish hypotheses that differ by a multiple of $(a-a_0)P$, so exact blindness starts at degree $1+\deg P$. The
+theorem states the conditions.
+
+\begin{theorem}[Operator-slice theorem]
+\label{thm:operator}
+On a two-site slice, let the pinned branch be $A_0=\{(a_0,b):b\in B_0\}$ with $B_0$ infinite. Let the
+recompute branch $\Gamma=\{(a,e(a))\}$ be an infinite subset of the zero set $V(P)$. Assume that $P\in\mathbb R[a,b]$ is irreducible
+(not a product of two nonconstant polynomials) and not an associate (a nonzero constant multiple) of $a-a_0$. Then $I(A_0\cup\Gamma)=\bigl((a-a_0)P\bigr)$ and $d^*=1+\deg P$.
+\end{theorem}
+
+Affine edges have $\deg P=\DstarAffineDegP$, so $d^*=\DstarAffine$. For the normalisation slices
+$e(a)=\beta+\omega a/\sqrt{\kappa a^2+\epsilon}$ with $\omega\neq0$, $\kappa>0$ and $\epsilon>0$, clearing the radical
+gives an irreducible $P$ of degree $\DstarRMSNormDegP$, so $d^*=\DstarRMSNorm$ on these RMSNorm and LayerNorm slices:
+normalisation \emph{raises} the onset. This is an exact statement about those slices, not about trained normalisation
+edges in general. If no nonzero polynomial vanishes on the graph of $e$, then $I(\Gamma)=(0)$,
+the blind space is zero at every finite degree, and $d^*=\infty$; a separate lemma proves this for two-key softmax
+and sigmoid-gated linear-attention slices with nonzero parameters.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_regimes.pdf}
+\caption{Exact operator slices and a trained model. \emph{Left:} maximum relative residual of a candidate polynomial relation fitted on each operator slice (Appendix~\ref{app:limits} gives the fitting procedure). The affine and RMSNorm residuals reach numerical precision at their
+proved onsets. The softmax residual decreases over the tested degrees, but numerical residuals alone cannot
+distinguish exact relations from accurate approximations (Remark~\ref{rem:scope}). The dashed line is a reference
+level of $10^{-13}$. \emph{Right:} GPT-2 small IOI captures, with the joint family on the same $\alpha$ grid as the single-site family
+(\S\ref{sec:practical}). Both tested cubic designs are full rank, but some train-fitted directions have much lower
+held-out energy under single-site than under joint interventions. The vertical axis is $\log_{10}(E_S/E_J)=-\log_{10}r$, with $r$ defined in \S\ref{sec:practical}; negative values mean lower single-site energy. Each thin line sorts one capture's held-out values in increasing order.
+The thick line averages these ordered profiles. The grey band is the same-family envelope of
+\S\ref{sec:practical}, shown for display.}
+\label{fig:regimes}
+\end{figure}
+
+With $k$ sites patched one at a time, the reachable set is a union of $k$ curves. On arm $i$ the patched coordinate
+is swept, upstream coordinates stay clean and downstream ones are recomputed from it. Assume that every coordinate on
+each arm is a polynomial in that arm's swept coordinate.
+
+\begin{proposition}[Restriction-rank bound for polynomial single-site arms]
+\label{prop:ksite}
+Let the coordinates on arm $i$ be polynomials $z_{ij}(t)$ of the swept coordinate $t$, with $z_{ii}(t)=t$, and let
+all arms pass through the clean configuration. Set $\eta_i=\max\bigl(\{1\}\cup\{\deg z_{ij}:z_{ij}\text{
+nonconstant}\}\bigr)$. Then $\operatorname{rank}(\mathrm{Res}_Q|_{\mathcal P_{\le d}})\le1+d\sum_i\eta_i$, so
+$\dim N(Q,\mathcal P_{\le d})\ge\binom{d+k}{k}-\bigl(1+d\sum_i\eta_i\bigr)$.
+\end{proposition}
+
+The degrees must include all downstream recomputation (Appendix~\ref{app:proofs}). For affine edges $\eta_i=1$ and the
+bound $1+kd$ is attained, while the polynomial class grows much faster with the number of sites. At degree $3$, the
+unresolved fraction rises from $\KBlindTwo\%$ at two sites to $\KBlindFive\%$ at five. A joint Cartesian product with
+at least four distinct values on each axis resolves all of it.
+
+\begin{remark}[Continuum, not grid; slice, not network]
+\label{rem:scope}
+Exact $d^*$ statements concern the operator's continuum of reachable states: every finite grid admits vanishing
+high-degree polynomials, so numerical checks corroborate but never establish these algebraic claims.
+The statements concern analysed two-site slices in the chosen polynomial coordinates, \emph{not} whether a full
+transformer has or lacks exact blind mechanisms.
+\end{remark}
+
+In the trained-model charts and polynomial classes we evaluate, the recompute single-site and joint designs have no
+exact blind direction. The next section therefore asks how weakly they constrain different directions.
+
+% ============================================================== 4 ====
+\section{From exact blindness to weak identification}
+\label{sec:practical}
+
+The exact results above concern operator slices; Sections~\ref{sec:practical} to~\ref{sec:pitfalls} turn to trained models. For the recompute single-site and joint
+designs, in every capture, chart and class we evaluate, the exact blind space is trivial: both designs have full
+rank. The question is therefore graded: how much less does a hypothesis difference vary under one family than under
+another? These are statements about weak identification in the evaluated charts and classes, not about exact
+non-identifiability. The clamped comparison family of \S\ref{sec:pitfalls} is the one exception, because its pinned
+coordinate arms give it an exact polynomial kernel by construction (Appendix~\ref{app:protocol}).
+
+We measure how visible a hypothesis difference is by its mean square on the states a family reaches. Let $\mu_Q$ be
+the measure that weights the states of $Q$, let $\varphi$ be a feature map spanning $\mathcal F$, and let
+$G_Q=\mathbb E_{\mu_Q}[\varphi(z)\varphi(z)^\top]$ be the intervention Gram operator. A hypothesis difference
+$h=\theta^\top\varphi$ then has \emph{energy} $E_Q(h)=\theta^\top G_Q\theta=\mathbb E_{\mu_Q}[h^2]$. Small energy
+means that the hypotheses differ little on those states. Under the regularity conditions that hold for the polynomial classes used here (continuous features, finite second
+moments, and $R_Q=\operatorname{supp}\mu_Q$), the kernel of $G_Q$ is exactly the blind space. Energy therefore gives a
+graded analogue of exact blindness.
+
+For a fixed hypothesis difference, or direction, $h$ we report the \emph{held-out $J/S$ energy ratio}
+$r(h)=E_J^{\mathrm{te}}(h)/E_S^{\mathrm{te}}(h)$, where $S$ and $J$ are the single-site and joint families. A large
+ratio means that single-site evidence constrains $h$ much less than joint evidence does, and we call such a direction
+\emph{S-weak}. ``Held-out'' means that the direction is fitted or named on training rows and scored on the
+complementary rows: the rows of each design are split in half, and directions are frozen before scoring. For the named
+direction of \S\ref{sec:predict}, the edge fit, whitening and feature scaling use training rows only. The archived
+optimised profiles instead used all analysed rows for whitening and scaling. For the fixed polynomial basis and
+covariant eigensolve, Appendix~\ref{app:protocol} shows that this is only a change of feature basis in exact
+arithmetic and leaves the held-out profiles unchanged. To find directions with contrasting energies, we form the Gram operators on training rows and solve the regularised generalised
+eigenproblem
+\[
+  \bigl(G_S+\lambda G_{\mathrm{ref}}\bigr)w=\nu\,\bigl(G_J+\lambda G_{\mathrm{ref}}\bigr)w,\qquad
+  G_{\mathrm{ref}}=\tfrac12(G_S+G_J),\quad\lambda=10^{-6},
+\]
+which regularises both sides by the same covariant reference operator, so that a change of feature basis leaves the
+spectrum invariant (Appendices~\ref{app:protocol} and~\ref{app:noninvariant}). The held-out profile orders the log
+single-site-to-joint energy ratios of all frozen training eigen-directions on test rows. Its low end is S-weak;
+its reverse end is joint-weak.
+
+We analyse $\MatchedN$ float32 captures across $\PredCells$ model--task cells; a capture is one run for a pair of
+sites and a seed. Captures share prompts and tasks, so counts are consistency checks and we make no population claim.
+The degree-3 polynomial class, the intervention grids and the chart are described in Appendix~\ref{app:protocol}. A
+readout screen excludes captures with $\mathrm{sd}(Y_{\mathrm{joint}})<0.15$; it is the only use of readouts in
+Sections~\ref{sec:practical} to~\ref{sec:pitfalls}, and it makes the analysed sample readout-conditioned.
+
+Optimising a direction can produce extreme ratios even within one family, so we rerun the train--freeze--score procedure on two splits of the single-site family and use their held-out profiles as a \emph{same-family envelope}. Escape counts are descriptive and any $p$-values are nominal (Appendix~\ref{app:protocol}, which gives the exact construction).
+
+% ============================================================== 5 ====
+\section{A weak direction predicted from intervention geometry}
+\label{sec:predict}
+
+Is single-site weakness only an artefact of searching for a weak direction? To find out, we score the one direction
+the theory names without any search. On an affine slice the single-site blind space is generated by
+$g_R=(a-a_0)(b-ma-c)$. We estimate it from intervention states alone: from the training rows, $a_0$ comes from
+the downstream-patching arm and $(m,c)$ from a least-squares fit of $b$ on $a$ along the upstream arm. No readout
+enters, and the direction is not chosen to separate the families. This is a re-analysis of captures we had inspected
+earlier with an optimised procedure; we ran no fresh validation of the named direction.
+
+The held-out $J/S$ energy ratio of this direction exceeds $10\times$ in
+$\PredMTotalCount$ captures across $\PredCells$ cells. Appendix~\ref{app:units} gives the per-cell medians
+(Table~\ref{tab:predict}) and three further checks (donor indices held out, summaries by prompt group, random directions),
+which give the same qualitative picture. A classical one-at-a-time baseline explains much of this. The clamped generator
+$g_C=(a-a_0)(b-b_0)$ is the blind generator of the one-at-a-time design, and it vanishes on both of that design's
+arms. On an exact affine slice it equals $m(a-a_0)^2$ on the recompute arm. It is small when the edge is flat and the
+scatter low, and most edges in this chart are flat (Appendix~\ref{app:matched} gives the finite-capture expression).
+Scored on the same recompute single-site and joint states, $g_C$ also clears $10\times$ in $\OfatRowCount$ captures.
+The recompute generator exceeds this baseline count by a net $\OfatNetDifference$ captures.
+
+Relative to the one-at-a-time baseline, the recompute generator becomes more distinctive as the fitted edge gets
+steeper: $r(g_R)/r(g_C)$ increases with the absolute whitened edge slope (Spearman $\OfatSpearman$). Its absolute
+ratio $r(g_R)$ nevertheless falls as the edge strengthens (Spearman $\EdgeBlindRho$ over $\EdgeN$ captures), where
+edge strength $s$ is $\mathrm{sd}(b\mid\text{arm }A)/\mathrm{sd}(b\mid\text{arm }B)$ on training single-site rows.
+The largest ratios therefore come from captures where $A$ barely drives $B$. Our attempt to remove this dependence by
+choosing the chart failed (\S\ref{sec:pitfalls}); Appendix~\ref{app:matched} gives the remaining edge diagnostics.
+
+On an analysed algebraic slice the candidate can be named by construction; whether it is weak in a finite trained-model sample, and by how much, is an empirical question (Appendices~\ref{app:robust} and~\ref{app:three}). The normalisation onset $\DstarRMSNorm$ applies only to the analysed normalisation slice, not to a trained edge.
+
+In these captures, single-site evidence has a weakly constrained direction that geometry can name from one sweep of
+intervention states. That does not show that the single-site family is worse than every other family, and such
+comparisons are easy to get wrong, as the next section shows.
+
+% ============================================================== 6 ====
+\section{Two traps when comparing intervention families}
+\label{sec:pitfalls}
+
+The comparison above raises a further question: could intervention families look differently informative for reasons
+unrelated to the mechanism of interest? We encountered two such artefacts in our own comparisons. The corrected analyses follow, and the claims they overturned are
+withdrawn (Table~\ref{tab:status}).
+
+\paragraph{Unmatched supports.} Our single-site family sweeps $\alpha\in[-0.5,1.5]$, extending half the clean-to-donor
+distance beyond each endpoint, while the joint family used raw donors ($\alpha=1$). A polynomial that is large only in
+the extrapolated region then looks ``visible to $S$, weak under $J$'' for reasons unrelated to any mechanism. The
+same-family null cannot detect this, because both halves of $S$ share the same support. This mismatch underlay our withdrawn claim that single-site and joint evidence are \emph{mutually non-dominating},
+that is, that a reverse direction also exists, weakly constrained by joint evidence and well constrained by
+single-site evidence. We therefore recollected the joint family
+on the same $\alpha$ grid, with the same prompts, donors and weights. Reverse escapes above the same-family envelope
+fell from $\EdgeFrozenEscapes$ captures to $\EdgeMatchedEscapes$, and restricting both families to $\alpha\in[0,1]$
+leaves $\EdgeSymmetricEscapes$. The few remaining reverse escapes are descriptively associated with stronger edges
+(Appendix~\ref{app:matched}). The matched joint family is a sparse design on the same grid, not a product grid, so
+exact support matching is not established; the comparison uses paired float32 captures. The lesson: before comparing
+two intervention families, check that their reachable sets span the same region. 
+
+\paragraph{Selecting a chart on the evaluation states.} To make the recompute and clamped single-site designs differ,
+the edge must be non-flat, and in the unembedding chart it is nearly flat (median absolute whitened slope
+$\RCUchartChartM$). We therefore selected the downstream coordinate by maximising a readout-free, regularised variance ratio between the
+two arms, and compared recompute with clamped single-site evidence in that chart. The recompute-weak end of the optimised profile then escaped the same-family envelope in
+$\RCPooledR$ captures. With a chart fitted on a different seed of the same layer pair it escaped in
+$\RCXseedPooledR$. The two analyses cover different cohorts (Appendix~\ref{app:chart}), so this is not a paired
+effect estimate. The selection rule helps explain the failure. For GPT-2 its denominator was estimated from at most
+$16$ donor directions in a $768$-dimensional activation space. In the GPT-2 captures for which this was logged, the
+selected direction had numerically negligible projection onto the span of those donor directions.  We withdraw the claim of non-domination in a chart optimised on the scored states. The
+lesson: optimising a chart on the states where it is scored is a selection effect, even when no readout is consulted.
+Fit the chart on different prompts and donors from those on which it is scored.
+
+These traps show why an intervention comparison must specify the states it reaches. The next section asks what those
+states can establish about a single measured effect, the kind a circuit analysis reports.
+
+% ============================================================== 7 ====
+\section{Does a measured effect carry over? A published IOI edge}
+\label{sec:ioi}
+
+Does a Name Mover head's measured single-site effect carry over to other states of an upstream S-Inhibition head? We
+ask this on the S-Inhibition $\to$ Name Mover edge of the IOI circuit of \citet{wang2022ioi} in GPT-2 small.
+Interpreting a single-site effect as a contribution that persists across upstream states assumes that it does. This is
+the practical form of the blind-space question, because a single-site run never visits the states where the effect would
+have to hold. Because our test forces the Name Mover's output, it asks only how the readout combines the two heads' outputs on the
+executed states. It does not test the query-mediated pathway by which S-Inhibition changes what the Name Mover
+writes, and it does not contradict the mechanism \citet{wang2022ioi} identified by path patching.
+
+\begin{tcolorbox}[title={The transport contrast}]
+The question is simple: does $B$ have the same measured effect after $A$ changes? Write $u$ and $v$ for replacement
+outputs of $A$ and $B$, and $0$ for each site's clean output (so $u=0$ corresponds to $a=a_0$). $Y(u,v)$ is the
+readout with $A$'s output set to $u$ and $B$'s output forced to $v$; $Y(u,0)$ keeps $B$ at its clean output. Patching
+$B$ alone measures its effect \emph{in the context} where $A$ is clean,
+\[
+  \Delta_B(v)=Y(0,v)-Y(0,0).
+\]
+If this effect transports to the upstream state $u$, the same $\Delta_B(v)$ should apply once $A$ is changed to $u$.
+Exactly, and without any model,
+\[
+  Y(u,v)-Y(u,0)=\Delta_B(v)+T_C(u,v),\qquad T_C(u,v)=Y(u,v)-Y(u,0)-Y(0,v)+Y(0,0).
+\]
+The four-point (difference-in-differences) \emph{transport contrast} $T_C$ uses the clamped corner $Y(u,0)$, and it
+vanishes at every tested $(u,v)$ exactly when $B$'s measured effect carries over to every tested state of $A$.
+Patching $A$ alone observes $Y(u,v_{\mathrm{rec}}(u))$, where $v_{\mathrm{rec}}(u)$ is the output $B$ recomputes to; it
+generally observes neither the joint corner $Y(u,v)$ nor the clamped corner $Y(u,0)$. Single-site evidence therefore
+does not determine $T_C$ without additional assumptions. Executing the two missing corners measures it directly and
+needs no chart.
+\end{tcolorbox}
+
+\paragraph{Design.} We pair four S-Inhibition heads with three Name Movers (twelve published head pairs). Controls
+pair four early heads that have no claimed IOI role with the same Name Movers. A \emph{head pair} with a prompt is a
+capture; on three base prompts, $\QCN$ of the $36$ published captures and $\QCCtrlN$ of the $36$ control captures
+pass the screen. Each capture executes the single-site arms, the clamped arm and $256$ joint states;
+Appendix~\ref{app:ioi} lists the head identities.
+
+\paragraph{The executed contrast is small on the tested grids.} This analysis was chosen after seeing the data, so we
+call it exploratory. For each capture on the three base prompts we compute the root mean square (RMS) of $T_C$ over
+the tested joint states. The median RMS over captures is $\AdqRmsT$ logits. Dividing each capture's RMS by its
+\emph{B-arm swing} gives a median percentage of $\AdqRmsTPct\%$. The swing is the readout range over the single-site $B$ arm ($32$ donors $\times$ $\NAlpha$
+coefficients; median $\MfSwingMed$ logits, never below $\MfSwingMin$). The largest single $|T_C|$ in a capture is $\MfMaxAbsMax$
+logits at most, so smallness describes the RMS over states, not every state. These captures do not measure the
+numerical floor; Appendix~\ref{app:ioi} gives the spread and a second normalisation.
+
+\paragraph{A preregistered replication meets both registered smallness criteria.} Before collecting fresh data, we
+preregistered a replication (Appendix~\ref{app:replication}). It used $\RepPrompts$ new prompts, three from each of $\RepTemplates$ IOI
+templates of \citet{wang2022ioi} that our earlier captures had not used, with the same head pairs, controls, design
+and analysis. For each prompt we take the median RMS of $T_C$ over its screened published captures. For each template
+we then take the median of its three prompt medians ($V_t$), and likewise for the percentage of the swing
+($V_t^{\mathrm{rel}}$). $V_t$ was below $\MfMargin$ logits in $\RepHAbsCount$ templates and $V_t^{\mathrm{rel}}$ below
+$1\%$ in $\RepHRelCount$, so both registered smallness criteria passed. Both margins were set after the exploratory
+analysis, and the relative one is the informative criterion. Registered smallness concerns template medians, not
+every capture; individual captures can be larger (Appendix~\ref{app:replication}).
+
+\paragraph{The control comparison is unresolved.} The replication also measured the float32 floor by re-executing every
+corner family in a different batch composition. Published contrasts exceeded ten times their floor in
+$\RepPubResolved$ captures, whereas control contrasts did so in only $\RepCtlResolved$. The registered comparison of
+published and control contrasts (H2) was therefore floor-limited under the registered rule. We report no
+published/control ratio and make no above-control claim, and under the registered decision rule this section remains
+exploratory, with its smallness replicated as registered.
+
+\paragraph{What single-site evidence leaves unmeasured.} Single-site interventions do not execute all the corners that define $T_C$, so without a model they cannot determine it. What can a model recover? The exploratory working model is the cubic class in a fixed, weight-derived chart motivated by the published claim that S-Inhibition heads act on the Name Movers' \emph{query} (Appendix~\ref{app:limits} defines the chart), with additive terms in $a$ or $b$ alone and cross coefficients $\gamma$ on $ab$, $a^2b$ and $ab^2$. Under it $T_C(u,v)=D(u,v)^\top\gamma$, where $D$ is the four-point contrast of the cross monomials, and the additive terms cancel. On the recompute arm of an affine edge the cross terms reduce to functions of $a$ alone, which the additive terms absorb, so single-site data inform $\gamma$ only through the scatter of $b$ about the fitted edge. The \emph{design gap} is the joint/single-site ratio of smallest eigenvalues of per-observation Grams of cross terms residualised against additive terms in this chart (Appendix~\ref{app:ioi}). This measures design geometry, not Fisher information about the network.
+
+\paragraph{On the exploratory captures, the working model does not predict the executed contrast.} Fitted on
+single-site states, the cubic predicts held-out joint readouts far worse than a constant (median $R^2$ $\RespSJR$),
+while an additive-only refit transfers (median $R^2$ $\RespAddThreeSJ$). Its median held-out RMS error in predicting
+$T_C$ is $\MfSThree$ logits, against $\MfZero$ for predicting zero. The bootstrap interval for the excess over
+predicting zero lies wholly above zero in $\MfSWorse$ single-site and $\MfJWorse$ joint fits. The model is misspecified
+on both supports; only the executed contrast is model-free. Table~\ref{tab:scales} in Appendix~\ref{app:ioi} gives the
+fit statistics.
+
+For each joint state we also compute the largest $|T_C|$ inside the fit's nominal $95\%$ Wald region for $\gamma$ under
+the working model, and summarise these by their median within each capture. We call this a working-model
+identification width. Because the cubic is misspecified, it is neither an observed error nor a calibrated bound: the
+pointwise envelopes contain the executed $|T_C|$ at every joint state in only $\AdqCoverUpperS$ (single-site) and
+$\AdqCoverUpperJ$ (joint) captures. Against the B-arm swing, the median single-site working-model identification
+width is $\MisS\%$ and the joint one $\MisJ\%$.
+
+\paragraph{Single-site rejections did not detect the executed deviation.} The submitted version read the rejections of
+$\gamma=0$ by single-site evidence as detection that separates published from control heads. That specificity depends
+on the covariance estimator, and we withdraw it; Appendix~\ref{app:ioi} gives the counts under alternative
+covariances. More fundamentally, because the cubic is misspecified on both supports, rejecting its additive
+restriction is not a measurement of the executed transport contrast. Figure~\ref{fig:scales} makes the mismatch
+visible: the single-site working-model width is far larger than the executed RMS deviation, while the joint width is
+closer in scale but poorly calibrated. Neither can be read as a resolved measurement of $T_C$.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_scales.pdf}
+\caption{Working-model identification widths and executed transport contrasts, per capture (exploratory; three base
+prompts). Left: published S-Inhibition $\to$ Name Mover captures; right: control captures. Captures are sorted within each panel. Triangles and open squares show the single-site and joint working-model identification widths, each a median over joint states; circles show the RMS of the executed $T_C$ over those states (log scale, logits). For the published heads, the median single-site width divided by the median executed RMS is
+$\AdqEnvSOverRmsT$: the executed RMS is much smaller than the single-site width. The widths are properties of the misspecified working model, neither observed errors nor
+calibrated bounds. The exploratory control captures did not measure their numerical floor. The dotted line is only a
+scale reference, the median floor measured in the replication for its published captures. The plot supports no
+above-control conclusion.}
+\label{fig:scales}
+\end{figure}
+
+\paragraph{Scope.} Everything here concerns GPT-2 small, the published S-Inhibition $\to$ Name Mover head pairs, output-replacement interventions and the tested grid of states. Without executing the corners one cannot know whether a transport deviation is small or large; measuring it requires the clamped and joint corner families in addition to the single-site arms. Appendix~\ref{app:ioi} also reports a second head group (previous-token and induction heads), which is not a second query-mediated circuit.
+
+% ============================================================== 8 ====
+\section{What an audit should record}
+\label{sec:limitations}
+
+The geometry and IOI analyses give a checklist for auditing new patching evidence. Its limits: the exact theorems cover only the analysed operator slices, and the trained-model results concern weak identification in the evaluated charts and classes, not exact non-identifiability; the $\MatchedN$ captures share prompts and tasks, so we make no population claim. In the preregistered IOI replication on $\RepPrompts$ fresh prompts from $\RepTemplates$ templates, H1 (absolute) and H1 (relative) passed in $\RepHAbsCount$ and $\RepHRelCount$ templates, whereas H2, the published/control comparison, was floor-limited, so we report no published/control ratio or above-control claim. The section remains exploratory, and the cubic working model's identification widths are uncalibrated. Appendix~\ref{app:limits} lists the limitations in full.
+
+\begin{tcolorbox}[title={An audit checklist for patching evidence}]
+\begin{enumerate}[leftmargin=1.4em,itemsep=1pt,topsep=1pt,parsep=0pt]
+\item Declare the mechanism class and the chart before using readouts to tune either.
+\item Record the intervention \emph{states}, not only the readouts, and inspect each family's low-energy directions (Appendix~\ref{app:protocol}).
+\item Match the regions that families reach; fit any data-derived chart on prompts and donors distinct from those used for scoring.
+\item Test a working model on held-out executed contrasts and check its calibration before reading its intervals; keep rejections separate from effect estimates.
+\item For a transport claim, declare the tested states, aggregation unit and margins, execute the four-point contrast, and measure its numerical floor by re-execution under a different batch composition.
+\item Record when the class, chart, direction and decision criteria were fixed relative to data inspection, and separate exploratory re-analysis from preregistered evaluation.
+\item Account for unequal arm variances and donor dependence; use inference units suited to the design and state the dependence that remains.
+\end{enumerate}
+\end{tcolorbox}
+
+An activation-patching experiment supports a mechanistic claim only relative to the alternatives its reachable states can separate. Within a declared mechanism class, those states fix which alternatives are exactly unresolved and reveal directions that are only weakly constrained, with no readout needed. Whether a per-component effect transports is a separate question: execute the missing corners, because better single-site statistics cannot determine it without a model.
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\appendix
+\input{appendix_corrections}
+\input{appendix}
+
+\end{document}

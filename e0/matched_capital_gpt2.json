@@ -1,0 +1,655 @@
+{
+ "task": "capital",
+ "model": "gpt2",
+ "dtype": "torch.float32",
+ "n_kept": 19,
+ "n_screened_out": 1,
+ "rows": [
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 0,
+   "std_Yjm": 0.20141060715631356,
+   "file": "capital_matched_gpt2_5_7_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.4999999431909994,
+    2.0000022022349033
+   ],
+   "res_S": {
+    "n_distinct": 102,
+    "n": 448,
+    "step_over_sd": 6.483165074515179e-05
+   },
+   "res_Jm": {
+    "n_distinct": 221,
+    "n": 256,
+    "step_over_sd": 3.7879805035932754e-05
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.0011742342052087741
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 7.600807189941406
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 2,
+   "std_Yjm": 0.20543431935657872,
+   "file": "capital_matched_gpt2_5_7_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.4999999887158841,
+    1.999997870226706
+   ],
+   "res_S": {
+    "n_distinct": 101,
+    "n": 448,
+    "step_over_sd": 4.7329115430597684e-05
+   },
+   "res_Jm": {
+    "n_distinct": 195,
+    "n": 256,
+    "step_over_sd": 0.0001114136316922893
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.0024894018248453292
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 4.2974700927734375
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 3,
+   "std_Yjm": 0.1885201316577917,
+   "file": "capital_matched_gpt2_5_7_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.4999999409633498,
+    1.5947018475227415
+   ],
+   "res_S": {
+    "n_distinct": 103,
+    "n": 448,
+    "step_over_sd": 5.070568559116335e-05
+   },
+   "res_Jm": {
+    "n_distinct": 248,
+    "n": 256,
+    "step_over_sd": 4.046991938823352e-05
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.00015832404597069686
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 3.8884811401367188
+  },
+  {
+   "pair": [
+    5,
+    7
+   ],
+   "seed": 4,
+   "std_Yjm": 0.17223506930554133,
+   "file": "capital_matched_gpt2_5_7_4.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.0000020302372925,
+    2.0000033055878816
+   ],
+   "res_S": {
+    "n_distinct": 103,
+    "n": 448,
+    "step_over_sd": 6.978406940354947e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.429640584819354e-05
+   },
+   "res_J": {
+    "n_distinct": 49,
+    "n": 256,
+    "step_over_sd": 0.00011048691343356835
+   },
+   "prompt": "The capital of Egypt is",
+   "clean": 11.1339111328125
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 0,
+   "std_Yjm": 2.350606473886346,
+   "file": "capital_matched_gpt2_5_10_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.4999999431909994,
+    2.0000002175938723
+   ],
+   "res_S": {
+    "n_distinct": 103,
+    "n": 448,
+    "step_over_sd": 4.55512275690519e-06
+   },
+   "res_Jm": {
+    "n_distinct": 220,
+    "n": 256,
+    "step_over_sd": 3.2457132301843936e-06
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 4.963646251354433e-05
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 7.600807189941406
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 1,
+   "std_Yjm": 1.8587667384699544,
+   "file": "capital_matched_gpt2_5_10_1.npz",
+   "box_S_over_Jm": [
+    1.245249892373429,
+    1.5713002113594787
+   ],
+   "box_S_over_J": [
+    2.490502975664537,
+    3.1425996319303127
+   ],
+   "res_S": {
+    "n_distinct": 101,
+    "n": 448,
+    "step_over_sd": 4.585692033782738e-06
+   },
+   "res_Jm": {
+    "n_distinct": 169,
+    "n": 256,
+    "step_over_sd": 1.231363953316188e-05
+   },
+   "res_J": {
+    "n_distinct": 49,
+    "n": 256,
+    "step_over_sd": 0.0003203491497928518
+   },
+   "prompt": "The capital of Egypt is",
+   "clean": 11.1339111328125
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 2,
+   "std_Yjm": 1.9061137514385937,
+   "file": "capital_matched_gpt2_5_10_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.4999999887158841,
+    2.0000001479261793
+   ],
+   "res_S": {
+    "n_distinct": 103,
+    "n": 448,
+    "step_over_sd": 5.2728517578406075e-06
+   },
+   "res_Jm": {
+    "n_distinct": 196,
+    "n": 256,
+    "step_over_sd": 5.2033688352226966e-05
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.00037517110027295627
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 4.2974700927734375
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 3,
+   "std_Yjm": 1.3165417218927409,
+   "file": "capital_matched_gpt2_5_10_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.4999999409633498,
+    2.0000000597023107
+   ],
+   "res_S": {
+    "n_distinct": 103,
+    "n": 448,
+    "step_over_sd": 7.173308717867607e-06
+   },
+   "res_Jm": {
+    "n_distinct": 247,
+    "n": 256,
+    "step_over_sd": 5.795026776881416e-06
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 4.384865459793537e-05
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 3.8884811401367188
+  },
+  {
+   "pair": [
+    5,
+    10
+   ],
+   "seed": 4,
+   "std_Yjm": 2.813648716537444,
+   "file": "capital_matched_gpt2_5_10_4.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.0000020302372925,
+    1.9999996685976895
+   ],
+   "res_S": {
+    "n_distinct": 101,
+    "n": 448,
+    "step_over_sd": 3.7165941152416594e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.4231322385112444e-05
+   },
+   "res_J": {
+    "n_distinct": 49,
+    "n": 256,
+    "step_over_sd": 0.0001510627128239812
+   },
+   "prompt": "The capital of Egypt is",
+   "clean": 11.1339111328125
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 0,
+   "std_Yjm": 2.831340021455454,
+   "file": "capital_matched_gpt2_6_9_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.9999993667426796,
+    2.0000003532178785
+   ],
+   "res_S": {
+    "n_distinct": 102,
+    "n": 448,
+    "step_over_sd": 3.7735073002449905e-06
+   },
+   "res_Jm": {
+    "n_distinct": 222,
+    "n": 256,
+    "step_over_sd": 2.694623207892954e-06
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 6.851420536702386e-05
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 7.600807189941406
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 1,
+   "std_Yjm": 1.5150533055686444,
+   "file": "capital_matched_gpt2_6_9_1.npz",
+   "box_S_over_Jm": [
+    1.2167693887806457,
+    1.4037052313536562
+   ],
+   "box_S_over_J": [
+    2.4335362244474386,
+    2.807411677510958
+   ],
+   "res_S": {
+    "n_distinct": 101,
+    "n": 448,
+    "step_over_sd": 5.6984866919688395e-06
+   },
+   "res_Jm": {
+    "n_distinct": 169,
+    "n": 256,
+    "step_over_sd": 0.000196393345121987
+   },
+   "res_J": {
+    "n_distinct": 49,
+    "n": 256,
+    "step_over_sd": 0.0026045908088375767
+   },
+   "prompt": "The capital of Egypt is",
+   "clean": 11.1339111328125
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 2,
+   "std_Yjm": 2.487628368034018,
+   "file": "capital_matched_gpt2_6_9_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.999999559406289,
+    2.000000590966585
+   ],
+   "res_S": {
+    "n_distinct": 103,
+    "n": 448,
+    "step_over_sd": 4.035787527583638e-06
+   },
+   "res_Jm": {
+    "n_distinct": 196,
+    "n": 256,
+    "step_over_sd": 1.2267740035911457e-05
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.0007886918714274033
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 4.2974700927734375
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 3,
+   "std_Yjm": 1.8885991462790597,
+   "file": "capital_matched_gpt2_6_9_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.0000018745645387,
+    2.0000006978709273
+   ],
+   "res_S": {
+    "n_distinct": 103,
+    "n": 448,
+    "step_over_sd": 5.261350908685902e-06
+   },
+   "res_Jm": {
+    "n_distinct": 247,
+    "n": 256,
+    "step_over_sd": 4.0397108863898e-06
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.0016903349341398691
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 3.8884811401367188
+  },
+  {
+   "pair": [
+    6,
+    9
+   ],
+   "seed": 4,
+   "std_Yjm": 2.5725859545116903,
+   "file": "capital_matched_gpt2_6_9_4.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.9999982465359065,
+    2.00000061990079
+   ],
+   "res_S": {
+    "n_distinct": 101,
+    "n": 448,
+    "step_over_sd": 4.317843403793719e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.0759563592069402e-05
+   },
+   "res_J": {
+    "n_distinct": 49,
+    "n": 256,
+    "step_over_sd": 0.001220765065384619
+   },
+   "prompt": "The capital of Egypt is",
+   "clean": 11.1339111328125
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 0,
+   "std_Yjm": 2.8025407271441543,
+   "file": "capital_matched_gpt2_7_9_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.0000022022349033,
+    2.0000003532178785
+   ],
+   "res_S": {
+    "n_distinct": 101,
+    "n": 448,
+    "step_over_sd": 3.7521066576783e-06
+   },
+   "res_Jm": {
+    "n_distinct": 221,
+    "n": 256,
+    "step_over_sd": 2.722313526920448e-06
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.00039138828623356224
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 7.600807189941406
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 1,
+   "std_Yjm": 1.4437084691855862,
+   "file": "capital_matched_gpt2_7_9_1.npz",
+   "box_S_over_Jm": [
+    1.6196364431173587,
+    1.4037052313536562
+   ],
+   "box_S_over_J": [
+    3.2392816248752094,
+    2.807411677510958
+   ],
+   "res_S": {
+    "n_distinct": 103,
+    "n": 448,
+    "step_over_sd": 5.6696846331494706e-06
+   },
+   "res_Jm": {
+    "n_distinct": 169,
+    "n": 256,
+    "step_over_sd": 3.6992067899190794e-05
+   },
+   "res_J": {
+    "n_distinct": 49,
+    "n": 256,
+    "step_over_sd": 0.0011547834114976885
+   },
+   "prompt": "The capital of Egypt is",
+   "clean": 11.1339111328125
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 2,
+   "std_Yjm": 2.487925210320904,
+   "file": "capital_matched_gpt2_7_9_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.999997870226706,
+    2.000000590966585
+   ],
+   "res_S": {
+    "n_distinct": 102,
+    "n": 448,
+    "step_over_sd": 4.011250004612792e-06
+   },
+   "res_Jm": {
+    "n_distinct": 196,
+    "n": 256,
+    "step_over_sd": 5.519824349735444e-05
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.0005752071936853007
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 4.2974700927734375
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 3,
+   "std_Yjm": 1.8852225790629653,
+   "file": "capital_matched_gpt2_7_9_3.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.5947018475227415,
+    2.0000006978709273
+   ],
+   "res_S": {
+    "n_distinct": 102,
+    "n": 448,
+    "step_over_sd": 5.24507767794261e-06
+   },
+   "res_Jm": {
+    "n_distinct": 248,
+    "n": 256,
+    "step_over_sd": 4.046946294820068e-06
+   },
+   "res_J": {
+    "n_distinct": 64,
+    "n": 256,
+    "step_over_sd": 0.0021515416378946883
+   },
+   "prompt": "The capital of Norway is",
+   "clean": 3.8884811401367188
+  },
+  {
+   "pair": [
+    7,
+    9
+   ],
+   "seed": 4,
+   "std_Yjm": 2.5405966126130077,
+   "file": "capital_matched_gpt2_7_9_4.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.0000033055878816,
+    2.00000061990079
+   ],
+   "res_S": {
+    "n_distinct": 103,
+    "n": 448,
+    "step_over_sd": 4.299969302611478e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.2011973082815623e-05
+   },
+   "res_J": {
+    "n_distinct": 49,
+    "n": 256,
+    "step_over_sd": 0.0005282509501335684
+   },
+   "prompt": "The capital of Egypt is",
+   "clean": 11.1339111328125
+  }
+ ]
+}

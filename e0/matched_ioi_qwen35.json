@@ -1,0 +1,689 @@
+{
+ "task": "ioi",
+ "model": "Qwen/Qwen3.5-9B-Base",
+ "dtype": "torch.float32",
+ "n_kept": 20,
+ "n_screened_out": 0,
+ "rows": [
+  {
+   "pair": [
+    15,
+    23
+   ],
+   "seed": 0,
+   "std_Yjm": 0.7841171986006862,
+   "file": "ioi_matched_qwen35_15_23_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.7781077303893058,
+    1.958365833922817
+   ],
+   "res_S": {
+    "n_distinct": 447,
+    "n": 448,
+    "step_over_sd": 1.9107290900349495e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 7.297437052329555e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.744403821417403e-05
+   },
+   "prompt": "Because Laura and Peter were hungry, Peter passed the bread to",
+   "clean": 5.787973403930664
+  },
+  {
+   "pair": [
+    15,
+    23
+   ],
+   "seed": 1,
+   "std_Yjm": 0.5500211544377864,
+   "file": "ioi_matched_qwen35_15_23_1.npz",
+   "box_S_over_Jm": [
+    1.069062105709178,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.6035931169821465,
+    1.9173387830908857
+   ],
+   "res_S": {
+    "n_distinct": 419,
+    "n": 448,
+    "step_over_sd": 2.678900783061079e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.241991805882144e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.193891888352943e-05
+   },
+   "prompt": "When David and Linda went to the park, Linda handed a ball to",
+   "clean": 6.856201171875
+  },
+  {
+   "pair": [
+    15,
+    23
+   ],
+   "seed": 2,
+   "std_Yjm": 1.2608335598486602,
+   "file": "ioi_matched_qwen35_15_23_2.npz",
+   "box_S_over_Jm": [
+    0.9999999999999989,
+    0.9999999999999999
+   ],
+   "box_S_over_J": [
+    1.6806897975793003,
+    2.2578006148431573
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 1.0305247749094315e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.5550047443592705e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.7483300762334214e-05
+   },
+   "prompt": "Because John and Sarah were hungry, Sarah passed the bread to",
+   "clean": 6.64924430847168
+  },
+  {
+   "pair": [
+    15,
+    23
+   ],
+   "seed": 3,
+   "std_Yjm": 0.35909814315566196,
+   "file": "ioi_matched_qwen35_15_23_3.npz",
+   "box_S_over_Jm": [
+    1.3828918389470046,
+    1.1139366624266185
+   ],
+   "box_S_over_J": [
+    2.7328185763034467,
+    2.6095512666234724
+   ],
+   "res_S": {
+    "n_distinct": 406,
+    "n": 448,
+    "step_over_sd": 1.1018108983984825e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.3901735531769816e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00014815747644988952
+   },
+   "prompt": "Because Tom and John were hungry, John passed the bread to",
+   "clean": 7.1359968185424805
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 0,
+   "std_Yjm": 1.052534076487972,
+   "file": "ioi_matched_qwen35_19_23_0.npz",
+   "box_S_over_Jm": [
+    1.0784417972836247,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.8869190487747693,
+    1.958365833922817
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 1.2446199457390177e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00010872894334272682
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.5797659449397004e-05
+   },
+   "prompt": "Because Laura and Peter were hungry, Peter passed the bread to",
+   "clean": 5.787973403930664
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 1,
+   "std_Yjm": 0.70003190676648,
+   "file": "ioi_matched_qwen35_19_23_1.npz",
+   "box_S_over_Jm": [
+    1.0928158537076138,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.6392237886655883,
+    1.9173387830908857
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 1.0004722115661935e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00011307337208005812
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 7.123478478949449e-05
+   },
+   "prompt": "When David and Linda went to the park, Linda handed a ball to",
+   "clean": 6.856201171875
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 2,
+   "std_Yjm": 1.5648960041021334,
+   "file": "ioi_matched_qwen35_19_23_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    0.9999999999999999
+   ],
+   "box_S_over_J": [
+    1.5000000073252355,
+    2.2578006148431573
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 7.788744909037711e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.4986099312772183e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.3744853020689686e-05
+   },
+   "prompt": "Because John and Sarah were hungry, Sarah passed the bread to",
+   "clean": 6.64924430847168
+  },
+  {
+   "pair": [
+    19,
+    23
+   ],
+   "seed": 3,
+   "std_Yjm": 0.5377213585926033,
+   "file": "ioi_matched_qwen35_19_23_3.npz",
+   "box_S_over_Jm": [
+    1.1725479193248298,
+    1.1139366624266185
+   ],
+   "box_S_over_J": [
+    1.8648447526638317,
+    2.6095512666234724
+   ],
+   "res_S": {
+    "n_distinct": 405,
+    "n": 448,
+    "step_over_sd": 9.450896408356744e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.143287454336519e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.30616866850435e-05
+   },
+   "prompt": "Because Tom and John were hungry, John passed the bread to",
+   "clean": 7.1359968185424805
+  },
+  {
+   "pair": [
+    21,
+    22
+   ],
+   "seed": 0,
+   "std_Yjm": 0.5518087857463287,
+   "file": "ioi_matched_qwen35_21_22_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.2431907685419494
+   ],
+   "box_S_over_J": [
+    2.729057372491427,
+    2.1965127917138134
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 5.593811194587824e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 8.987001608909221e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00013156062060478755
+   },
+   "prompt": "Because Laura and Peter were hungry, Peter passed the bread to",
+   "clean": 5.787973403930664
+  },
+  {
+   "pair": [
+    21,
+    22
+   ],
+   "seed": 1,
+   "std_Yjm": 0.4883046816694399,
+   "file": "ioi_matched_qwen35_21_22_1.npz",
+   "box_S_over_Jm": [
+    1.2698363370060621,
+    1.0000000000000004
+   ],
+   "box_S_over_J": [
+    2.6942846146138484,
+    2.088925227806243
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 2.772960882989761e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 8.202731366843101e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.5277957537256496e-05
+   },
+   "prompt": "When David and Linda went to the park, Linda handed a ball to",
+   "clean": 6.856201171875
+  },
+  {
+   "pair": [
+    21,
+    22
+   ],
+   "seed": 2,
+   "std_Yjm": 0.5758401366777307,
+   "file": "ioi_matched_qwen35_21_22_2.npz",
+   "box_S_over_Jm": [
+    1.7466078694418066,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.8476513489965383,
+    1.5064364238393662
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 7.024576386848778e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.3122884483475123e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.5488379740507687e-05
+   },
+   "prompt": "Because John and Sarah were hungry, Sarah passed the bread to",
+   "clean": 6.64924430847168
+  },
+  {
+   "pair": [
+    21,
+    22
+   ],
+   "seed": 3,
+   "std_Yjm": 0.2334806120470126,
+   "file": "ioi_matched_qwen35_21_22_3.npz",
+   "box_S_over_Jm": [
+    1.0611999416931752,
+    3.5039072285572845
+   ],
+   "box_S_over_J": [
+    2.0462952252308075,
+    5.255860845568347
+   ],
+   "res_S": {
+    "n_distinct": 406,
+    "n": 448,
+    "step_over_sd": 4.150775447856604e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 0.00013887631385548863
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 8.654141012623745e-05
+   },
+   "prompt": "Because Tom and John were hungry, John passed the bread to",
+   "clean": 7.1359968185424805
+  },
+  {
+   "pair": [
+    23,
+    27
+   ],
+   "seed": 0,
+   "std_Yjm": 2.324757683621077,
+   "file": "ioi_matched_qwen35_23_27_0.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.0
+   ],
+   "box_S_over_J": [
+    1.958365833922817,
+    1.8212586359472145
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 4.253650080558205e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 9.845406149211657e-06
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.315921803901379e-05
+   },
+   "prompt": "Because Laura and Peter were hungry, Peter passed the bread to",
+   "clean": 5.787973403930664
+  },
+  {
+   "pair": [
+    23,
+    27
+   ],
+   "seed": 1,
+   "std_Yjm": 2.7754860247370403,
+   "file": "ioi_matched_qwen35_23_27_1.npz",
+   "box_S_over_Jm": [
+    1.0,
+    0.9999999999999996
+   ],
+   "box_S_over_J": [
+    1.9173387830908857,
+    2.028268765361553
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 2.531203719767644e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.2026218390842433e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.310399909364633e-06
+   },
+   "prompt": "When David and Linda went to the park, Linda handed a ball to",
+   "clean": 6.856201171875
+  },
+  {
+   "pair": [
+    23,
+    27
+   ],
+   "seed": 2,
+   "std_Yjm": 2.8682826808743855,
+   "file": "ioi_matched_qwen35_23_27_2.npz",
+   "box_S_over_Jm": [
+    0.9999999999999997,
+    1.0
+   ],
+   "box_S_over_J": [
+    2.2578006148431573,
+    1.9595715136825353
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 3.1542054147621545e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.493672405701116e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.653269512720136e-05
+   },
+   "prompt": "Because John and Sarah were hungry, Sarah passed the bread to",
+   "clean": 6.64924430847168
+  },
+  {
+   "pair": [
+    23,
+    27
+   ],
+   "seed": 3,
+   "std_Yjm": 1.8936791164511377,
+   "file": "ioi_matched_qwen35_23_27_3.npz",
+   "box_S_over_Jm": [
+    1.1139366624266185,
+    1.2521495044410018
+   ],
+   "box_S_over_J": [
+    2.6095512666234724,
+    2.230459462277232
+   ],
+   "res_S": {
+    "n_distinct": 406,
+    "n": 448,
+    "step_over_sd": 2.181540595259961e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 4.6332050845974935e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.27308285543929e-05
+   },
+   "prompt": "Because Tom and John were hungry, John passed the bread to",
+   "clean": 7.1359968185424805
+  },
+  {
+   "pair": [
+    27,
+    31
+   ],
+   "seed": 0,
+   "std_Yjm": 3.72869587066709,
+   "file": "ioi_matched_qwen35_27_31_0.npz",
+   "box_S_over_Jm": [
+    0.9999999999999997,
+    2.1224841954844242
+   ],
+   "box_S_over_J": [
+    1.8212586359472145,
+    4.607702994789664
+   ],
+   "res_S": {
+    "n_distinct": 448,
+    "n": 448,
+    "step_over_sd": 7.974936031192702e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.094770833763692e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 6.776830791346401e-06
+   },
+   "prompt": "Because Laura and Peter were hungry, Peter passed the bread to",
+   "clean": 5.787973403930664
+  },
+  {
+   "pair": [
+    27,
+    31
+   ],
+   "seed": 1,
+   "std_Yjm": 3.0415544387963087,
+   "file": "ioi_matched_qwen35_27_31_1.npz",
+   "box_S_over_Jm": [
+    0.9999999999999996,
+    2.631045815584385
+   ],
+   "box_S_over_J": [
+    2.028268765361553,
+    4.099330131360439
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 4.319232281750288e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 2.508386643991591e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.3743852820319687e-05
+   },
+   "prompt": "When David and Linda went to the park, Linda handed a ball to",
+   "clean": 6.856201171875
+  },
+  {
+   "pair": [
+    27,
+    31
+   ],
+   "seed": 2,
+   "std_Yjm": 3.0304275409750177,
+   "file": "ioi_matched_qwen35_27_31_2.npz",
+   "box_S_over_Jm": [
+    1.0,
+    1.1914109400316857
+   ],
+   "box_S_over_J": [
+    1.9595715136825353,
+    2.855619770886786
+   ],
+   "res_S": {
+    "n_distinct": 420,
+    "n": 448,
+    "step_over_sd": 2.1223864632784237e-05
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.461695532602484e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 1.4816729730668515e-06
+   },
+   "prompt": "Because John and Sarah were hungry, Sarah passed the bread to",
+   "clean": 6.64924430847168
+  },
+  {
+   "pair": [
+    27,
+    31
+   ],
+   "seed": 3,
+   "std_Yjm": 2.268749692984828,
+   "file": "ioi_matched_qwen35_27_31_3.npz",
+   "box_S_over_Jm": [
+    1.0367848432571982,
+    1.4844833672322524
+   ],
+   "box_S_over_J": [
+    1.846829436730088,
+    2.2267250433158803
+   ],
+   "res_S": {
+    "n_distinct": 406,
+    "n": 448,
+    "step_over_sd": 1.3555074748489765e-06
+   },
+   "res_Jm": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 5.80086274263763e-05
+   },
+   "res_J": {
+    "n_distinct": 256,
+    "n": 256,
+    "step_over_sd": 3.2786262356249316e-05
+   },
+   "prompt": "Because Tom and John were hungry, John passed the bread to",
+   "clean": 7.1359968185424805
+  }
+ ]
+}

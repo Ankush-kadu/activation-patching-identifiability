@@ -1,0 +1,124 @@
+{
+ "status": "DESCRIPTIVE: orthogonal-reparameterisation diagnostic on one previously inspected capture",
+ "file": "actsg_5_10_0.npz",
+ "k": 4,
+ "degrees": [
+  1,
+  2,
+  3
+ ],
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "p": 768,
+ "construction": "Q_s = qr(default_rng(s).normal((p, p)))[0]; representation X -> X Q_s^T; chart refitted",
+ "base": {
+  "1": 0.14266665400988973,
+  "2": 9.007511710280475e-07,
+  "3": 1.2129009299993581e-10
+ },
+ "orthogonal": {
+  "0": {
+   "1": {
+    "vS": 0.14266665400988973,
+    "abs_diff": 0.0,
+    "rel_diff": 0.0
+   },
+   "2": {
+    "vS": 9.007511796894255e-07,
+    "abs_diff": 8.661377965554448e-15,
+    "rel_diff": 9.615727677233017e-09
+   },
+   "3": {
+    "vS": 7.53038552687002e-11,
+    "abs_diff": 4.5986237731235617e-11,
+    "rel_diff": 0.379142571283707
+   }
+  },
+  "1": {
+   "1": {
+    "vS": 0.1426666540098897,
+    "abs_diff": 2.7755575615628914e-17,
+    "rel_diff": 1.9454844447185872e-16
+   },
+   "2": {
+    "vS": 9.007511734916886e-07,
+    "abs_diff": 2.4636410668682843e-15,
+    "rel_diff": 2.7350961576397126e-09
+   },
+   "3": {
+    "vS": 1.4063818969232192e-10,
+    "abs_diff": 1.9348096692386106e-11,
+    "rel_diff": 0.15951918424529812
+   }
+  },
+  "2": {
+   "1": {
+    "vS": 0.1426666540098898,
+    "abs_diff": 5.551115123125783e-17,
+    "rel_diff": 3.8909688894371744e-16
+   },
+   "2": {
+    "vS": 9.007511756550645e-07,
+    "abs_diff": 4.627017000747918e-15,
+    "rel_diff": 5.13684261488886e-09
+   },
+   "3": {
+    "vS": 6.8014317957980835e-12,
+    "abs_diff": 1.1448866120413773e-10,
+    "rel_diff": 0.9439242593721014
+   }
+  }
+ },
+ "d1_rel_max": 3.8909688894371744e-16,
+ "d2_rel_max": 9.615727677233017e-09,
+ "d3_rel_min": 0.15951918424529812,
+ "d3_rel_max": 0.9439242593721014,
+ "base_single_thread": {
+  "1": 0.14266665400988976,
+  "2": 9.007511731908312e-07,
+  "3": 4.7657237348623045e-11
+ },
+ "base_single_thread_rel_diff": {
+  "1": 1.9454844447185872e-16,
+  "2": 2.4010889085193557e-09,
+  "3": 0.6070805440915256
+ },
+ "stored_mech_classes_base": {
+  "1": 0.14266665400988973,
+  "2": 9.007511710280475e-07,
+  "3": 1.2129009299993581e-10
+ },
+ "base_rel_diff_vs_stored": {
+  "1": 0.0,
+  "2": 0.0,
+  "3": 0.0
+ },
+ "environment": {
+  "python": "3.13.5",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "blas": [
+   {
+    "internal_api": "openblas",
+    "num_threads": 24,
+    "version": "0.3.29",
+    "threading_layer": "pthreads"
+   },
+   {
+    "internal_api": "openblas",
+    "num_threads": 24,
+    "version": "0.3.28",
+    "threading_layer": "pthreads"
+   }
+  ],
+  "thread_env": {
+   "OMP_NUM_THREADS": null,
+   "OPENBLAS_NUM_THREADS": null,
+   "MKL_NUM_THREADS": null
+  }
+ },
+ "note": "degrees 1-2 are invariant under orthogonal reparameterisation to numerical precision; degree 3 is not, and it also changes with the BLAS thread configuration (base_single_thread); configuration-specific diagnostic, not a portable constant"
+}

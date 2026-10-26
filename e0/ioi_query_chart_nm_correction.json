@@ -1,0 +1,211 @@
+{
+ "file": "ioi_query_chart.json",
+ "list_key": "rows",
+ "note": "Machine-readable correction for a known metadata error in a frozen artifact (its digest is recorded in FREEZE.md, so the file itself is left unchanged). In these rows the 'nm' field reads [1, 0]; the Name Mover head is L10H0, i.e. [10, 0], as the capture file names qchart_<si><nm>_100_<seed>.npz show. No number in the paper uses this field.",
+ "corrections": [
+  {
+   "row": 0,
+   "si": [
+    7,
+    3
+   ],
+   "seed": 0,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_73_100_0.npz"
+  },
+  {
+   "row": 1,
+   "si": [
+    7,
+    3
+   ],
+   "seed": 1,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_73_100_1.npz"
+  },
+  {
+   "row": 2,
+   "si": [
+    7,
+    3
+   ],
+   "seed": 2,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_73_100_2.npz"
+  },
+  {
+   "row": 7,
+   "si": [
+    7,
+    9
+   ],
+   "seed": 0,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_79_100_0.npz"
+  },
+  {
+   "row": 8,
+   "si": [
+    7,
+    9
+   ],
+   "seed": 1,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_79_100_1.npz"
+  },
+  {
+   "row": 9,
+   "si": [
+    7,
+    9
+   ],
+   "seed": 2,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_79_100_2.npz"
+  },
+  {
+   "row": 15,
+   "si": [
+    8,
+    10
+   ],
+   "seed": 0,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_810_100_0.npz"
+  },
+  {
+   "row": 16,
+   "si": [
+    8,
+    10
+   ],
+   "seed": 1,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_810_100_1.npz"
+  },
+  {
+   "row": 17,
+   "si": [
+    8,
+    10
+   ],
+   "seed": 2,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_810_100_2.npz"
+  },
+  {
+   "row": 23,
+   "si": [
+    8,
+    6
+   ],
+   "seed": 0,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_86_100_0.npz"
+  },
+  {
+   "row": 24,
+   "si": [
+    8,
+    6
+   ],
+   "seed": 1,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_86_100_1.npz"
+  },
+  {
+   "row": 25,
+   "si": [
+    8,
+    6
+   ],
+   "seed": 2,
+   "nm_recorded": [
+    1,
+    0
+   ],
+   "nm_correct": [
+    10,
+    0
+   ],
+   "capture": "qchart_86_100_2.npz"
+  }
+ ]
+}
